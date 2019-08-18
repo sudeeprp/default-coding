@@ -17,6 +17,7 @@ To test all of this, do we mock the file and the json parser, to return the json
 What if we exercise the habit of stateless functions? The functionality can be modeled as the following set of transformations:
 * from a configuration-file to a configuration-dictionary
 * from a dictionary to a parameter value
+
 Here are the corresponding functions:
 {% gist 06eb7daec8c080bbc4ec3b7b6f3d9bfe %}
 The whole thing is testable now without mocks. Adding a test is trivial too.
