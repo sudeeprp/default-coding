@@ -1,10 +1,10 @@
-## Welcome to GitHub Pages
+## Default habits for Faster Quality
 
-You can use the [editor on GitHub](https://github.com/sudeeprp/default-coding/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This site advocates 'defaults' - the styles you use, unless there's a strong reason not to. These styles are developed by habit and they are designed to give faster quality.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### Refactor with stateless functions
+An application would have many processing-points: Parts that transform an input to an output. Here's an example
+{% gist 638a7be3a5c71937f194532de90a1e2d %}
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
