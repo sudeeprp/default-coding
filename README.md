@@ -1,6 +1,6 @@
 ## Habits for Faster Quality
 
-Habits are the styles you use, unless there's a strong reason not to. Here are a few styles that are designed to give faster quality.
+Habits are the styles we use, unless there's a reason not to. Here are a few styles, designed to give faster quality.
 
 ### Stateless Functions [to make it testable](stateless-functions.md)
 
