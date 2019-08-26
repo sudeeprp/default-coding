@@ -9,7 +9,8 @@ Gating on neutral metrics gives the team a direction with specific targets.
 Non-neutral metrics are good as overall motivators / as benchmarks.
 
 Let's look at some examples of 'measuring metrics for action'
-1. High fan-out
+Let's take a patient-data-virtualization example to motivate us.
+1. High fan-out in a facade
 2. Low coverage
 3. Duplication
 4. Dead code
