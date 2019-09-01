@@ -6,22 +6,29 @@ from git import Repo
 
 
 def remove_tree(top):
-    for root, dirs, files in os.walk(top, topdown=False):
-        for name in files:
-            filename = os.path.join(root, name)
-            os.chmod(filename, stat.S_IWUSR)
-            os.remove(filename)
-        for name in dirs:
-            os.rmdir(os.path.join(root, name))
-    os.rmdir(top)
+    if os.path.isdir(top):
+        for root, dirs, files in os.walk(top, topdown=False):
+            for name in files:
+                filename = os.path.join(root, name)
+                os.chmod(filename, stat.S_IWUSR)
+                os.remove(filename)
+            for name in dirs:
+                os.rmdir(os.path.join(root, name))
+        os.rmdir(top)
 
 
-def clone_sample(sample):
+def py_module_in_folder(folder_name):
+    pyfiles = filter(lambda name: name.endswith('.py'), os.listdir(folder_name))
+    return next(pyfiles, None).replace('.py', '')
+
+
+def clone_sample_to_module(sample):
+    clone_bench_folder = 'testbench'
     url_to_clone = 'https://gist.github.com/{}.git'.format(sample)
-    target_dirname = os.path.join('testbench', sample)
+    target_dirname = os.path.join(clone_bench_folder, sample)
     remove_tree(target_dirname)
     Repo.clone_from(url_to_clone, target_dirname)
-    return target_dirname
+    return clone_bench_folder + '.' + sample + '.' + py_module_in_folder(target_dirname)
 
 
 def try_calling(function):
@@ -45,18 +52,20 @@ def run_sample(module_name_of_sample_code):
     try:
         module_with_sample_code = importlib.import_module(module_name_of_sample_code)
     except ModuleNotFoundError:
+        print('Module not found: ' + module_name_of_sample_code)
         return False
     except SyntaxError:
+        print('Syntax error in module: ' + module_name_of_sample_code)
         return False
     else:
         funcs_in_sample = inspect.getmembers(module_with_sample_code, inspect.isfunction)
-        return False not in run_tests(funcs_in_sample)
+        test_results = run_tests(funcs_in_sample)
+        return test_results and False not in test_results
 
 
 def run_repos(sample_repos):
     run_results = []
     for sample in sample_repos:
-        folder = clone_sample(sample)
-        module_name_of_sample_code = module_name_from_sample()
+        module_name_of_sample_code = clone_sample_to_module(sample)
         run_results.append(run_sample(module_name_of_sample_code))
     return run_results
