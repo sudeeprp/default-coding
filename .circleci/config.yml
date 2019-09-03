@@ -30,6 +30,7 @@ jobs:
           name: run tests
           command: |
             cd integrate/test
+            export PYTHONPATH=/home/circleci/repo/integrate
             pipenv run python test_repocompiler.py
 
       - store_artifacts:
