@@ -29,6 +29,8 @@ jobs:
       - run:
           name: run tests
           command: |
+            pwd
+            ls -l
             cd default-coding/integrate/test
             pipenv run python test_repocompiler.py
 
