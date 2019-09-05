@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/sudeeprp/default-coding.svg?style=svg)](https://circleci.com/gh/sudeeprp/default-coding)
 ## Habits for Faster Quality
 
 Habits are the styles we use, unless there's a reason not to. Here are a few styles, designed to give faster quality.
