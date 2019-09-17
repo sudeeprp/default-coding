@@ -9,10 +9,10 @@ class RepoCompilerTester(unittest.TestCase):
         self.assertIsNotNone(importlib.import_module(module_name))
 
     def test_failure_reported_when_sample_asserts(self):
-        self.assertFalse(repocompiler.run_sample('samples.sample_fails'))
-        self.assertFalse(repocompiler.run_sample('samples.sample_norun'))
-        self.assertTrue(repocompiler.run_sample('samples.sample_passes'))
-        self.assertFalse(repocompiler.run_sample('samples.sample_hasnotest'))
+        self.assertFalse(repocompiler.run_sample('test.samples.sample_fails'))
+        self.assertFalse(repocompiler.run_sample('test.samples.sample_norun'))
+        self.assertTrue(repocompiler.run_sample('test.samples.sample_passes'))
+        self.assertFalse(repocompiler.run_sample('test.samples.sample_hasnotest'))
 
 
 if __name__ == '__main__':
