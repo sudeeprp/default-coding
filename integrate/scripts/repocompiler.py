@@ -60,6 +60,8 @@ def run_sample(module_name_of_sample_code):
     else:
         funcs_in_sample = inspect.getmembers(module_with_sample_code, inspect.isfunction)
         test_results = run_tests(funcs_in_sample)
+        if not test_results:
+            print("No tests in " + module_name_of_sample_code)
         return test_results and False not in test_results
 
 
