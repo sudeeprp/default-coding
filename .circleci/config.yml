@@ -24,6 +24,7 @@ jobs:
       - run:
           name: install linters
           command: |
+            sudo apt-get install nodejs
             npm install -g markdownlint-cli
 
       - run:
