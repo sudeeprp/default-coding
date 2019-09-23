@@ -22,6 +22,16 @@ jobs:
             pipenv install
 
       - run:
+          name: install linters
+          command: |
+            npm install -g markdownlint-cli
+
+      - run:
+          name: run linters
+          command: |
+            markdownlint *.md
+
+      - run:
           name: run tests
           command: |
             cd integrate/test
