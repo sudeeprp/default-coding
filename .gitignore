@@ -1,4 +1,6 @@
 *.bak
 integrate/scripts/__pycache__/
 integrate/test/test_samples/__pycache__/
-integrate/test/testbench/*
+integrate/testbench/*
+node_modules/*
+package-lock.json
