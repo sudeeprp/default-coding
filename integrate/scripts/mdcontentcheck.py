@@ -11,12 +11,14 @@ def find_misspellings(words):
     return spell.unknown(words)
 
 
+def link_exists(link):
+    paths = ['.', '..', os.path.join('..', '..')]
+    finds = [os.path.isfile(os.path.join(path, link)) for path in paths]
+    return True in finds
+
+
 def find_missinglinks(links):
-    missinglinks = []
-    for link in links:
-        if not os.path.isfile(link):
-            missinglinks.append(link)
-    return missinglinks
+    return [x for x in links if not link_exists(x)]
 
 
 def remove_nonwords(md_content):

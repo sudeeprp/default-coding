@@ -12,8 +12,7 @@ class MDContentCheckTester(unittest.TestCase):
     def test_missinglinks(self):
         PRESENT_FILES = ['README.md', 'small-semantic-distance.md']
         MISSING_FILES = ['missing.md']
-        links = PRESENT_FILES + MISSING_FILES
-        missinglinks = mdchecker.find_missinglinks(links)
+        missinglinks = mdchecker.find_missinglinks(PRESENT_FILES + MISSING_FILES)
         self.assertTrue(MISSING_FILES[0] in missinglinks and PRESENT_FILES[0] not in missinglinks,
                         msg="Missing links reported: " + str(missinglinks))
 

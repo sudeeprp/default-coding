@@ -1,4 +1,4 @@
 *.bak
 integrate/scripts/__pycache__/
-integrate/test/samples/__pycache__/
+integrate/test/test_samples/__pycache__/
 integrate/test/testbench/*
