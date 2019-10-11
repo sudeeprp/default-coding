@@ -30,9 +30,14 @@ jobs:
             sudo npm install -g markdownlint-cli
 
       - run:
-          name: run linters
+          name: lint markdown
           command: |
             markdownlint *.md
+
+      - run:
+          name: lint python
+          command: |
+            pipenv run pylint --rcfile=integrate\.pylintrc integrate
 
       - run:
           name: run tests
