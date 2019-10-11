@@ -37,7 +37,7 @@ jobs:
       - run:
           name: lint python
           command: |
-            pipenv run pylint --rcfile=integrate\.pylintrc integrate
+            pipenv run pylint --rcfile=integrate/.pylintrc integrate
 
       - run:
           name: run tests
