@@ -46,6 +46,7 @@ jobs:
             export PYTHONPATH=/home/circleci/repo/integrate
             pipenv run python test_repocompiler.py
             pipenv run python test_mdcontentcheck.py
+            pipenv run python MarkDownsFunctionalTest.py
             pipenv run python SamplesFunctionalTest.py
 
       - store_artifacts:

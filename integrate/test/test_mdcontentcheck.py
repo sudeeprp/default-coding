@@ -2,6 +2,16 @@ import unittest
 import scripts.mdcontentcheck as mdchecker
 
 class MDContentCheckTester(unittest.TestCase):
+    def test_extract_links_and_words(self):
+        md_content = \
+        '''
+        Hi there this is a link [linked](link.md)
+        and this is not (not a link).
+        Good luck.
+        '''
+        extract = mdchecker.md_to_links_and_words(md_content)
+        self.assertTrue('link.md' in extract['links'])
+
     def test_misspellings(self):
         GOOD_SPELL = ['initialize', 'initiate']
         BAD_SPELL = ['innnovate']
