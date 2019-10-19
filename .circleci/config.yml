@@ -30,24 +30,37 @@ jobs:
             sudo npm install -g markdownlint-cli
 
       - run:
-          name: lint markdown
+          name: Setup environment
+          command: |
+            export PYTHONPATH=/home/circleci/repo/integrate
+
+      - run:
+          name: lint markdowns
           command: |
             markdownlint *.md
 
       - run:
-          name: lint python
+          name: lint integrator
           command: |
-            pipenv run pylint --rcfile=integrate/.pylintrc integrate
+            pushd integrate
+            pipenv run pylint --rcfile=.pylintrc .
+            popd
 
       - run:
-          name: run tests
+          name: unit test integrator
           command: |
-            cd integrate/test
-            export PYTHONPATH=/home/circleci/repo/integrate
-            pipenv run python test_repocompiler.py
-            pipenv run python test_mdcontentcheck.py
-            pipenv run python MarkDownsFunctionalTest.py
-            pipenv run python SamplesFunctionalTest.py
+            pushd integrate
+            pipenv run python test/test_repocompiler.py
+            pipenv run python test/test_mdcontentcheck.py
+            popd
+
+      - run:
+          name: functional tests
+          command: |
+            pipenv run python test/MarkDownsFunctionalTest.py
+            pushd integrate
+            pipenv run python test/SamplesFunctionalTest.py
+            popd
 
       - store_artifacts:
           path: test-reports

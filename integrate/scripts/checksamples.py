@@ -10,4 +10,5 @@ def samples_run_without_errors():
 
 def samples_are_free_of_lints():
     sample_repos = pageparser.compile_sample_repos()
-    return False
+    run_results = repocompiler.lint_repos(sample_repos)
+    return run_results and False not in run_results

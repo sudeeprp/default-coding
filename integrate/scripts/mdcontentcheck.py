@@ -13,15 +13,9 @@ def find_misspellings(words):
     return spell.unknown(words)
 
 
-def md_file_exists(link):
-    PATHS = ['.', '..', os.path.join('..', '..')]
-    finds = [os.path.isfile(os.path.join(path, link)) for path in PATHS]
-    return True in finds
-
-
 def http_link_exists(link):
     try:
-        urlrequest.urlopen(link)
+        urlrequest.urlopen(link, timeout=10)
         return True
     except urlerror.HTTPError as e:
         print(e.code)
@@ -32,12 +26,10 @@ def http_link_exists(link):
 
 def link_exists(link):
     if link.startswith('http'):
-        return http_link_exists(link)
-    elif link.endswith('.md'):
-        return md_file_exists(link)
+        link_does_exist = http_link_exists(link)
     else:
-        print('Unknown link type: ' + link)
-    return False
+        link_does_exist = os.path.isfile(link)
+    return link_does_exist
 
 
 def find_missinglinks(links):
@@ -50,14 +42,24 @@ def remove_nonwords(md_content):
     return text_without_links_and_code
 
 
+def find_base_path_in_parents():
+    DESIRED_BASE = 'default-coding'
+    base_path = os.path.realpath('.')
+    while not base_path.endswith(DESIRED_BASE) and base_path != os.path.realpath(os.sep):
+        base_path = os.path.realpath(os.path.join(base_path, '..'))
+    if base_path == '':
+        print("Error: " + DESIRED_BASE + " not found")
+        base_path = None
+    return base_path
+
+
 def find_md_files():
-    PATHS = ['.', '..']
     IGNORE_PATH = 'node_modules'
     md_filelist = []
-    for path in PATHS:
-        md_filelist += [os.path.join(location, filename)
-                        for location, _, files in os.walk(path) if IGNORE_PATH not in location
-                        for filename in files if filename.endswith('.md')]
+    base_path = find_base_path_in_parents()
+    md_filelist += [os.path.join(location, filename)
+                    for location, _, files in os.walk(base_path) if IGNORE_PATH not in location
+                    for filename in files if filename.endswith('.md')]
     return md_filelist
 
 
@@ -69,9 +71,3 @@ def find_md_links(md):
     inline_links = links_from_pairs(INLINE_LINK_RE.findall(md))
     footnote_links = links_from_pairs(FOOTNOTE_LINK_URL_RE.findall(md))
     return inline_links + footnote_links
-
-
-def md_to_links_and_words(md_content):
-    extract = {'links': find_md_links(md_content),
-               'words': remove_nonwords(md_content)}
-    return extract
