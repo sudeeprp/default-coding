@@ -10,6 +10,9 @@ jobs:
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
       - image: circleci/python:3.7.1
 
+    environment:
+      PYTHONPATH:~/repo/integrate
+
     working_directory: ~/repo
 
     steps:
@@ -30,11 +33,6 @@ jobs:
             sudo npm install -g markdownlint-cli
 
       - run:
-          name: Setup environment
-          command: |
-            export PYTHONPATH=~/repo/integrate
-
-      - run:
           name: lint markdowns
           command: |
             markdownlint *.md
@@ -48,7 +46,6 @@ jobs:
           name: unit test integrator
           command: |
             pushd integrate
-            export PYTHONPATH=~/repo/integrate
             pipenv run python test/test_repocompiler.py
             pipenv run python test/test_mdcontentcheck.py
             popd
