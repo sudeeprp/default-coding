@@ -42,9 +42,7 @@ jobs:
       - run:
           name: lint integrator
           command: |
-            pushd integrate
-            pipenv run pylint --rcfile=.pylintrc .
-            popd
+            pipenv run pylint --rcfile=integrate/.pylintrc integrate
 
       - run:
           name: unit test integrator
