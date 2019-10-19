@@ -42,24 +42,11 @@ def remove_nonwords(md_content):
     return text_without_links_and_code
 
 
-def find_base_path_in_parents():
-    DESIRED_BASE = 'default-coding'
-    base_path = os.path.realpath('.')
-    while not base_path.endswith(DESIRED_BASE) and base_path != os.path.realpath(os.sep):
-        base_path = os.path.realpath(os.path.join(base_path, '..'))
-    if base_path == '':
-        print("Error: " + DESIRED_BASE + " not found")
-        base_path = None
-    return base_path
-
-
 def find_md_files():
     IGNORE_PATH = 'node_modules'
-    md_filelist = []
-    base_path = find_base_path_in_parents()
-    md_filelist += [os.path.join(location, filename)
-                    for location, _, files in os.walk(base_path) if IGNORE_PATH not in location
-                    for filename in files if filename.endswith('.md')]
+    md_filelist = [os.path.join(location, filename)
+                   for location, _, files in os.walk('.') if IGNORE_PATH not in location
+                   for filename in files if filename.endswith('.md')]
     return md_filelist
 
 

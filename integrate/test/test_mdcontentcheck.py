@@ -26,10 +26,6 @@ class MDContentCheckTester(unittest.TestCase):
         self.assertTrue(MISSING_FILES[0] in missinglinks and PRESENT_FILES[0] not in missinglinks,
                         msg="Missing links reported: " + str(missinglinks))
 
-    def test_md_base_path(self):
-        base_path = mdchecker.find_base_path_in_parents()
-        self.assertTrue(base_path.endswith('default-coding'))
-
 
 if __name__ == '__main__':
     unittest.main()
