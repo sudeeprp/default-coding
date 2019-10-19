@@ -32,7 +32,7 @@ jobs:
       - run:
           name: Setup environment
           command: |
-            export PYTHONPATH=/home/circleci/repo/integrate
+            export PYTHONPATH=~/repo/integrate
 
       - run:
           name: lint markdowns
@@ -48,6 +48,7 @@ jobs:
           name: unit test integrator
           command: |
             pushd integrate
+            export PYTHONPATH=~/repo/integrate
             pipenv run python test/test_repocompiler.py
             pipenv run python test/test_mdcontentcheck.py
             popd
