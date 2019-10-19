@@ -22,6 +22,11 @@ jobs:
             pipenv install
 
       - run:
+          name: setup environment
+          command: |
+            echo 'export PYTHONPATH=~/repo/integrate' >> $BASH_ENV
+
+      - run:
           name: install linters
           command: |
             sudo apt-get install curl
@@ -30,17 +35,28 @@ jobs:
             sudo npm install -g markdownlint-cli
 
       - run:
-          name: run linters
+          name: lint the markdowns
           command: |
             markdownlint *.md
 
       - run:
-          name: run tests
+          name: lint the integrator
           command: |
-            cd integrate/test
-            export PYTHONPATH=/home/circleci/repo/integrate
-            pipenv run python test_repocompiler.py
-            pipenv run python SamplesFunctionalTest.py
+            pipenv run pylint --rcfile=integrate/.pylintrc integrate
+
+      - run:
+          name: unit test the integrator
+          command: |
+            pushd integrate
+            pipenv run python test/test_repocompiler.py
+            pipenv run python test/test_mdcontentcheck.py
+            popd
+
+      - run:
+          name: functional test of content
+          command: |
+            pipenv run python integrate/test/MarkDownsFunctionalTest.py
+            pipenv run python integrate/test/SamplesFunctionalTest.py
 
       - store_artifacts:
           path: test-reports
