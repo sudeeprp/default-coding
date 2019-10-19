@@ -35,17 +35,17 @@ jobs:
             sudo npm install -g markdownlint-cli
 
       - run:
-          name: lint markdowns
+          name: lint the markdowns
           command: |
             markdownlint *.md
 
       - run:
-          name: lint integrator
+          name: lint the integrator
           command: |
             pipenv run pylint --rcfile=integrate/.pylintrc integrate
 
       - run:
-          name: unit test integrator
+          name: unit test the integrator
           command: |
             pushd integrate
             pipenv run python test/test_repocompiler.py
@@ -53,7 +53,7 @@ jobs:
             popd
 
       - run:
-          name: functional tests
+          name: functional test of content
           command: |
             pipenv run python integrate/test/MarkDownsFunctionalTest.py
             pipenv run python integrate/test/SamplesFunctionalTest.py
