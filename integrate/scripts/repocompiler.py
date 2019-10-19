@@ -22,7 +22,7 @@ def remove_tree(top):
 
 def py_module_in_folder(folder_name):
     pyfiles = filter(lambda name: name.endswith('.py'), os.listdir(folder_name))
-    return next(pyfiles, None).replace('.py', '')
+    return folder_name.replace(os.sep, '.') + '.' + next(pyfiles, None).replace('.py', '')
 
 
 def clone_sample_to_folder(clone_base_folder, sample):
@@ -31,11 +31,6 @@ def clone_sample_to_folder(clone_base_folder, sample):
     remove_tree(target_dirname)
     Repo.clone_from(url_to_clone, target_dirname)
     return target_dirname
-
-
-def clone_sample_to_module(sample):
-    target_dirname = clone_sample_to_folder(CLONE_BENCH_FOLDER, sample)
-    return CLONE_BENCH_FOLDER + '.' + sample + '.' + py_module_in_folder(target_dirname)
 
 
 def try_calling(function):
@@ -72,10 +67,10 @@ def run_sample(module_name_of_sample_code):
         return test_results and False not in test_results
 
 
-def run_repos(sample_repos):
+def run_module_in_cloned_folders(sample_folders):
     run_results = []
-    for sample in sample_repos:
-        module_name_of_sample_code = clone_sample_to_module(sample)
+    for repo_folder in sample_folders:
+        module_name_of_sample_code = py_module_in_folder(repo_folder)
         run_results.append(run_sample(module_name_of_sample_code))
     return run_results
 
@@ -91,9 +86,8 @@ def lint_sample(folder_of_sample_code):
     return success
 
 
-def lint_repos(sample_repos):
+def lint_folders(sample_folders):
     run_results = []
-    for sample in sample_repos:
-        folder_name_of_sample_code = clone_sample_to_folder(CLONE_BENCH_FOLDER, sample)
-        run_results.append(lint_sample(folder_name_of_sample_code))
+    for folder in sample_folders:
+        run_results.append(lint_sample(folder))
     return run_results

@@ -55,10 +55,8 @@ jobs:
       - run:
           name: functional tests
           command: |
-            pipenv run python test/MarkDownsFunctionalTest.py
-            pushd integrate
-            pipenv run python test/SamplesFunctionalTest.py
-            popd
+            pipenv run python integrate/test/MarkDownsFunctionalTest.py
+            pipenv run python integrate/test/SamplesFunctionalTest.py
 
       - store_artifacts:
           path: test-reports

@@ -23,11 +23,12 @@ def all_mds_are_spelt_well(md_filelist):
 
 def all_links_in_mds_are_accessible(md_filelist):
     print("Checking links...", end='')
+    missinglinks = []
     for md_filename in md_filelist:
         with open(md_filename) as f:
             md_content = f.read()
         md_links = md_checks.find_md_links(md_content)
-        missinglinks = md_checks.find_missinglinks(md_links)
+        missinglinks += md_checks.find_missinglinks(md_links)
         showMistakes(md_filename, missinglinks, '\n Inaccessible links: ')
     print("Done")
     return not missinglinks
