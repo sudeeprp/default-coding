@@ -33,7 +33,10 @@ so there is a better vocabulary:
 
 `a += 2` does the job in most languages like C, C#, Java, Python, etc.
 A translation-chain ultimately makes this into binary.
-##### The binary is for the computer. Anything else is for human consumption.
+
+____
+The binary is for the computer. Anything else is for human consumption
+____
 
 Now you can see why `a += 2` still misses the point -
 it does not convey the significance of what's being incremented.
@@ -48,16 +51,21 @@ Good. So we are counting something. But what are we counting? How about:
 Ok, we are counting customers. Maybe they are entering a store.
 But why `2`? How about:
 
-    COUPLE = 2
-    customers += COUPLE
+```python
+COUPLE = 2
+customers += COUPLE
+```
 
 While this is python code,
 it ultimately translates to the same binary and does the same job.
-It's a little clearer now, that the `2` is to count a couple as two people.
+It's a little clearer now, that the `2` is to count a COUPLE as two people.
 
 Notice how it's bridging our intention
 and the binary that 'runs' that intention.
 When the code is close to our intention,
 the chances of mistakes are minimized.
+
+However, this code is defective.
+Before looking at defects in the code, we need to be sure about our intentions.
 
 [Again, what was our intention?](intention-vs-implementation.md)
