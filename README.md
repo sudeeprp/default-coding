@@ -1,7 +1,8 @@
 # Code without bounds
 
 'Coding is about computer-languages' - is that true?
-It's like saying 'Communication is about spelling and grammar'
+It's like saying 'Communication is about spelling and grammar'.
+I could write perfect spelling and grammar and still be vague.
 
 The origin of the word 'code' suggests a 'systematic representation'
 to reduce ambiguity. Like a 'code of conduct'.
@@ -34,9 +35,7 @@ so there is a better vocabulary:
 `a += 2` does the job in most languages like C, C#, Java, Python, etc.
 A translation-chain ultimately makes this into binary.
 
-____
-The binary is for the computer. Anything else is for human consumption
-____
+> The binary is for the computer. Anything else is for human consumption
 
 Now you can see why `a += 2` still misses the point -
 it does not convey the significance of what's being incremented.
@@ -49,16 +48,17 @@ Good. So we are counting something. But what are we counting? How about:
 `customers += 2`
 
 Ok, we are counting customers. Maybe they are entering a store.
-But why `2`? How about:
+But why `2`? How about giving this code a meaningful name:
 
 ```python
-COUPLE = 2
-customers += COUPLE
+def customerCoupleEntered():
+    customers += 2
 ```
 
 While this is python code,
 it ultimately translates to the same binary and does the same job.
-It's a little clearer now, that the `2` is to count a COUPLE as two people.
+It's a little clearer now, that the
+`2` is to count a customer-couple as two people.
 
 Notice how it's bridging our intention
 and the binary that 'runs' that intention.
@@ -66,6 +66,6 @@ When the code is close to our intention,
 the chances of mistakes are minimized.
 
 However, this code is defective.
-Before looking at defects in the code, we need to be sure about our intentions.
+Before looking at defects in the code, we need to be sure about our intention.
 
 [Again, what was our intention?](intention-vs-implementation.md)
