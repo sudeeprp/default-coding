@@ -123,3 +123,20 @@ significant for calculations, but can fail the equality check.
 
 See [this article](https://floating-point-gui.de/errors/comparison/)
 for more details.
+
+Here we saw single data-types.
+These data-types are combined to represent things in the real world.
+
+For example, an image could be represented by
+a couple of integers for its height and width in pixels,
+followed by a sequence of pixels.
+This representation could suffice for a 'class' of digital images.
+
+A medical x-ray would also include the patient details,
+such as a string having the Patient's ID.
+This could be used to represent the class of all x-ray images.
+
+A medical CT is actually a collection of multiple images
+(slices) of a patient's body.
+Such a collection could be used to represent the
+class of all CT images.
