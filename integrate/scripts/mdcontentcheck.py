@@ -15,7 +15,8 @@ def find_misspellings(words):
 
 def http_link_exists(link):
     try:
-        urlrequest.urlopen(link, timeout=10)
+        req = urlrequest.Request(link, headers={'User-Agent': 'RaPa/3.0'})
+        urlrequest.urlopen(req, timeout=10).read()
         return True
     except urlerror.HTTPError as e:
         print(e.code)

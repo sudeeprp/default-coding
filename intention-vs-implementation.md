@@ -49,10 +49,13 @@ def customerEntered():
     customers += 1
 ```
 
-Some notes about the grammar here: In python, the keyword `def`
+Some notes about the vocabulary here: In python, the keyword `def`
 is used to give a name to a sequence of code.
 The code to increment `customers` by `1` is given the name `customerEntered`.
-We can run the code in it by writing code like this:
+The keyword `global` is used to say that the `customers`
+we refer in both functions are the same thing.
+
+We can run the code in these functions by calling them like this:
 
 ```python
 customerEntered()

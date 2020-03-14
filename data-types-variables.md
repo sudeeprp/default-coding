@@ -113,7 +113,9 @@ if(f1 == f2) {
 }
 ```
 
-Here's the funny thing: it may or may not pass the equality!
+Here's the funny thing: the `==` operator may or may not pass -
+it doesn't matter what language you use!
+
 The reason is in the representation of floating point numbers
 in a computer. Depending on how the floating point is computed,
 there can be small differences in the values, which is not
