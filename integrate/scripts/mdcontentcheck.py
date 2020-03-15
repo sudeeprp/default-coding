@@ -55,7 +55,7 @@ def find_md_links(md):
     INLINE_LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
     FOOTNOTE_LINK_URL_RE = re.compile(r'\[(\d+)\]:\s+(\S+)')
     def links_from_pairs(pairs):
-        return [item[1] for item in pairs]
+        return [item[1].split()[0] for item in pairs]
     inline_links = links_from_pairs(INLINE_LINK_RE.findall(md))
     footnote_links = links_from_pairs(FOOTNOTE_LINK_URL_RE.findall(md))
     return inline_links + footnote_links
