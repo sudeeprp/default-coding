@@ -35,4 +35,4 @@ char c1 = 8377;
 System.out.println(c1);
 ```
 
-Will print the symbol ₹
+Will print the symbol &#8377;
