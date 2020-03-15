@@ -15,7 +15,8 @@ def find_misspellings(words):
 
 def http_link_exists(link):
     try:
-        urlrequest.urlopen(link, timeout=10)
+        req = urlrequest.Request(link, headers={'User-Agent': 'RaPa/3.0'})
+        urlrequest.urlopen(req, timeout=10).read()
         return True
     except urlerror.HTTPError as e:
         print(e.code)
@@ -54,7 +55,7 @@ def find_md_links(md):
     INLINE_LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
     FOOTNOTE_LINK_URL_RE = re.compile(r'\[(\d+)\]:\s+(\S+)')
     def links_from_pairs(pairs):
-        return [item[1] for item in pairs]
+        return [item[1].split()[0] for item in pairs]
     inline_links = links_from_pairs(INLINE_LINK_RE.findall(md))
     footnote_links = links_from_pairs(FOOTNOTE_LINK_URL_RE.findall(md))
     return inline_links + footnote_links
