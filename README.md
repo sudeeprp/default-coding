@@ -21,23 +21,22 @@ their languages have severely restricted vocabularies.
 
 Code written for a computer looks like this:
 
-`10000100101101010001101`
-<<check binary
+`10001011 1000101 11110100 10000011 11000000 00000010 10001001 01000101 11110100`
 
 It's a piece of code that adds two to something,
 when it's run on an Intel processor.
-No matter what language we used,
+No matter what language we use,
 it needs to be translated to this kind of binary in order to run.
 
-For a human seeing this code, it's hard to know what this piece is doing,
-so there is a better vocabulary:
+For a human, it's hard to know what this piece is doing.
+So there is a better vocabulary:
 
 `a += 2` does the job in most languages like C, C#, Java, Python, etc.
 A translation-chain ultimately makes this into binary.
 
 > The binary is for the computer. Anything else is for human consumption
 
-Now you can see why `a += 2` still misses the point -
+You can see why `a += 2` still misses the point -
 it does not convey the significance of what's being incremented.
 How about a better name?
 
