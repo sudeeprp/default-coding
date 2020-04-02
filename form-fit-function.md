@@ -29,7 +29,8 @@ It may be part of a bigger system,
 which needs to be assembled with limited tools.
 So the type of the **screw head** is important.
 
-It must neither corrode, nor pollute. So it must be **blackened**.
+It must neither corrode, nor pollute.
+**Blackening** would be a cost-effective option.
 
 What about the 'function'?
 This part must function with certain load, heat, vibration and a lifetime...
@@ -115,7 +116,7 @@ without affecting something else.
 
 > How do we avoid this complexity and keep things replaceable?
 
-At every question above, let's think-
+At every question above, let's rethink-
 How do we _replace_ (not modify) the implementation?
 What is a different way of doing it?
 How would a non-programming person do it by hand?
