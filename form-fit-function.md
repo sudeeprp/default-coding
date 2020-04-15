@@ -35,8 +35,14 @@ It must neither corrode, nor pollute.
 What about the 'function'?
 This part must function with certain load, heat, vibration and a lifetime...
 
-You can see that even for a small part like this,
-a _complete specification_ is hard.
+This is where things get complex.
+For instance, a full specification of 'vibration' is not possible,
+due to its non-linear nature.
+
+There is a limit to the ease of specification,
+even while dealing with small parts.
+
+> A _complete specification_ is too expensive.
 
 ## Software form-fit-function
 
@@ -49,6 +55,13 @@ it can run.
 
 However, software continuously deforms -
 built with changing dependencies and runs in many different states.
+
+For instance, a software that receives images over a network
+may run out of memory if it receives too many of them too fast.
+With interlinked resource requirements, which inevitably change
+after the software has been made,
+the 'form' of software is hard to characterize.
+Maybe it doesn't have a fixed form.
 
 > Dynamic analysis can recognize the effect of these changes early.
 
@@ -108,8 +121,8 @@ We've not specified the behavior in that situation.
 What if almost all visits yesterday were fraudulent, maybe someone
 tried an attack? How do we roll it back?
 
-You can see what's going on... if we keep changing this class
-for all this stuff, it will get complicated.
+You can see what's going on... if we keep changing our class
+for all these requirements, it will get complicated.
 The class will get tied up to billing, analytics and so on.
 Eventually, it will be hard to change it
 without affecting something else.
@@ -117,8 +130,21 @@ without affecting something else.
 > How do we avoid this complexity and keep things replaceable?
 
 At every question above, let's rethink-
-How do we _replace_ (not modify) the implementation?
+How do we design, so we _replace_ (not modify) the implementation?
 What is a different way of doing it?
 How would a non-programming person do it by hand?
 
 Anyone thinking of storing visit-logs?
+
+Let's say we store a visit log, which documents the time of each visit.
+We could pick what we want from it: filters to remove fradulent data;
+billing that takes hourly counts; analytics that counts by month or seasons.
+
+This is a flavor of _event sourcing_.
+
+Each functionality is free to make its own view of the data,
+without interfering with others.
+There is no need of a common data-model, other than the visit-logs.
+Each vertical (billing, analytics, etc) is separate.
+
+This type of solution 'vertically slices' the problem.
