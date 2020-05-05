@@ -25,6 +25,7 @@ here are a few situations and frequent responses:
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable line-length -->
+
 Situation | Response #1 | Response #2
 ---|---|---
 It's old code and we're not adding much | Anyway it's ugly, why beautify it? | Changes here don't get us high margins. Make them inexpensive.
@@ -81,3 +82,6 @@ which makes for more haste, more short-cuts and complex code.
 
 Placing hard limits on new code and freezing complexity limits on old methods
 is a possible approach.
+
+## Refactoring by specification
+Clarity emerges iteratively. 
