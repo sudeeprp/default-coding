@@ -84,4 +84,8 @@ Placing hard limits on new code and freezing complexity limits on old methods
 is a possible approach.
 
 ## Refactoring by specification
-Clarity emerges iteratively. 
+
+Clarity emerges iteratively. Often, complex code is a result of
+ambiguity in the specification. In these cases, it's good to
+step back and get specific.
+[See here for an illustration.](specification-refactoring.md)
