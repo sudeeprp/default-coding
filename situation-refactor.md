@@ -32,6 +32,7 @@ It's old code and we're not adding much | Anyway it's ugly, why beautify it? | C
 This code is not business critical | If customers don't care, why should we? | It's low risk to change. Let's use this to build our capability and reputation.
 Only small changes allowed | Unit test effort is higher than the code change. Skip it. | It will be revisited at least 10 times in its life. Let's safeguard the change.
 We're scared to touch it. Hard to get good talent to work on it... | Let my successor bite the bullet | Let's see the code we fear; Let's prevent it from getting worse.
+
 <!-- markdownlint-restore -->
 
 If you feel for Response #2 in any of these situations, read on.
@@ -40,7 +41,7 @@ Given the objective of speed and reliability, have a look at
 [this link, which explores Lucid, Correct and Unambiguous coding](investment-benefits.md),
 while enabling future maintenance to do the same.
 
-Here are a few approaches you can do right away.
+Here are a few approaches you can start right away.
 
 ## Making changes inexpensive
 
