@@ -83,15 +83,15 @@ void fire_even_positions() {
 
 Now you can see what happens if we purchase a new type of gun:
 We need to change three functions:
-`synchronized_fire` to fire simultaneiously (well, almost),
+`synchronized_fire` to fire simultaneously,
 `fire_odd_positions` and `fire_even_positions` as illustrated above.
 
 As they purchase more guns and add more firing patterns, the effort
-keeps increasing, giving a competitive edge to the enemy.
+keeps increasing. This could even give a competitive edge to the enemy!
 
 How do we make the logic of 'fire all', 'fire odd' and 'fire even'
-work on different arrangement of guns,
-even types that they may purchase in future?
+work on different arrangement of guns?
+Can we keep these functions unchanged on future purchases too?
 The same logic needs to take place in different forms of gun-arrangement.
 
 Function pointers in C provide a method to achieve polymorphism.
@@ -100,12 +100,14 @@ See [here](https://www.learn-c.org/en/Function_Pointers)
 for a quick refresher on C function pointers.
 
 What we need is 'a function to fire the guns one by one'.
-Here's an outline of such a function:
+Let's first outline the function that fires all guns:
 
 ```C
-void synchronized_fire(/*accept array of guns here*/) {
+void synchronized_fire(/* accept array of guns here */) {
+
    //iterate through the array
    //and fire each element in there
+
 }
 ```
 
@@ -114,23 +116,25 @@ The caller determines the type and sequence.
 The function just fires all of them. With this, we've removed the logic
 of 'which gun' and 'how to fire' from this function.
 
-Where do we put that logic? Let's try a struct:
+Then where do we put the logic of firing each gun? Let's try a struct:
 
 ```C
 struct Gun
 {
   char gun_id[32];
   void (*fire)(int);
-
 }
 ```
 
 Observe that the struct `Gun` has two members.
 One is a noun (the gun identification)
-and another is a verb (the activity of firing).
+and another is a verb (the activity of firing), which is a
+[pointer to a function](https://www.learn-c.org/en/Function_Pointers).
+It could be made to point to any function that accepts an `int`
+and returns nothing.
 
 Let's now write the `synchronized_fire` function, which we outlined above.
-Remember that an array in C always needs to be accompanied by its bounds:
+Remember that an array in C always needs to be accompanied by its length:
 
 ```C
 void synchronized_fire(struct Gun[] guns, unsigned int n_guns) {

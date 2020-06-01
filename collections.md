@@ -8,7 +8,7 @@ char s[30];
 
 The variable `s` is a collection of 30 characters and can be used as a string.
 
-In Java, an array of languages can be declared and accessed this way:
+In Java, an array of strings can be declared and accessed this way:
 
 ```java
 ArrayList<String> languages = new ArrayList<String>(

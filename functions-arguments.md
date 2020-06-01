@@ -7,7 +7,8 @@ within functions, in different languages. Let's take a look.
 You can try out all code-snippets here by clicking
 'Enter focus mode' in [this site](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/list-collection?tutorial-step=1)
 
-Consider two C# functions:
+Consider this C# function called `incrementIt`.
+It takes an integer and tries to increment it, unsuccessfully though:
 
 ```C#
 void incrementIt(int i) {

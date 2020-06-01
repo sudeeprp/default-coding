@@ -15,19 +15,19 @@ For example, `unsigned short int` says that we have an integer that's
 expected to take only positive values.
 On most computers, a variable of this type will occupy 16 bits.
 
-This statement declares a variable of this type and initializes it to zero:
+This statement declares such a variable and initializes it to zero:
 
 ```C
 unsigned short int i = 0;
 ```
 
-Just for fun, let's decrement `i` after the above initialization?
+Just for fun, let's decrement `i` after the above initialization:
 
 ```C
 i--;
 ```
 
-Decrementing `0` gives `-1`, but `i` is unsigned, so what may happen?
+Decrementing the value `0` gives `-1`, but `i` is unsigned, so what may happen?
 Try it out and see!
 
 See [here](https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm)
