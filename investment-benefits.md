@@ -29,7 +29,7 @@ These reports are derived from years of experience with a language.
 
 Of course, ambiguity doesn't mean a defect. It's only a potential
 indication of a present or future defect. For instance, an analysis
-of the code can report an un-initialized variable,
+of the code can report an uninitialized variable,
 but not overflows and concurrency-related issues.
 [See here](https://docs.sonarqube.org/latest/user-guide/issues/)
 for one possible classification.
@@ -59,14 +59,14 @@ Once we've settled ambiguity, we need to check the correctness of our software.
 
 Software systems grow huge- almost all of it built by human hands.
 Humans make mistakes. Two pieces of software that share resources
-(e.g., run on the same network) can interfere, even though
+(maybe they're on the same network) can interfere, even though
 they weren't meant to interact at all. Human mistakes can multiply.
 
 That's why defects are orders-of-magnitude more expensive to catch,
 as the software starts interacting with
 dependencies, different systems, the environment and the user.
 
-Un-intended behavior in the software can only be detected by its effect.
+Unintended behavior in the software can only be detected by its effect.
 When we reduce the dependencies of a test to make it fast and repeatable,
 we get a **unit-tests**.
 
@@ -149,7 +149,7 @@ branching, code-similarities, design-similarities and similarity of purpose-
 all of them are opportunities to look for duplicates.
 
 Tooling for copy-paste detection works well in verbose languages,
-where a repitition of 8-10 lines of code can be considered significant.
+where a repetition of 8-10 lines of code can be considered significant.
 However, in languages like python or in case of a domain-specific language,
 a line-count of 3 yields better results. Also, a human can detect similarities
 much better than any tool.
@@ -157,7 +157,7 @@ much better than any tool.
 For instance, when interpreting a clinical lab report,
 the instructions can be repetitive:
 See if the pulse-rate is in the normal range;
-if the blood pressur is in the normal range;
+if the blood pressure is in the normal range;
 if oxygen saturation is in the normal range...
 We wouldn't do that.
 We would normally abstract it as:
@@ -168,7 +168,7 @@ may have been missed in design.
 
 **Complexity** creeps in, usually seen as semantic-distance
 
-Long sentences with multiple ands and buts are difficult to read. Similarly,
+Long sentences with multiple 'and' and 'but' are difficult to read. Similarly,
 long methods with a lot of loops and conditions are hard to understand.
 Cyclomatic complexity is a metric that effectively indicates
 the _minimum_ number of test cases required to check all flows in a function.
@@ -180,7 +180,7 @@ Keeping method-complexity at (or under) 3 would mean less time for anyone
 trying to understand it.
 
 Complexity increases due to other factors as well, including shared state,
-dependencies (fan-out) and dependants (fan-in).
+dependencies (fan-out) and dependents (fan-in).
 
 > Controlling complexity is about making the code talk about its purpose.
 Looking through simple code is like

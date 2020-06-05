@@ -1,6 +1,6 @@
 # Automate
 
-Boring, repetitive tasks are usually the movtivation for automation.
+Boring, repetitive tasks are usually the motivation for automation.
 Sometimes, by the time we realize that a task is repeating itself,
 some manual effort is already wasted.
 More often, complex manual checks creep into the repetition,
@@ -9,10 +9,10 @@ which become hard to automate.
 This habit is about automating, even when we don't know
 how many times we would repeat something.
 
-Example: A content management system's output is a html 'home-page',
+Example: A content management system's output is a HTML 'home-page',
 putting together several pieces of the company's information.
 
-A check to see if the content is updated (which is automatable)
+A check to see if the content is updated (which can be automated)
 gets combined with the validation of usability
 (which is hard-to-automate).
 

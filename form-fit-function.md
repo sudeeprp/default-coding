@@ -22,7 +22,7 @@ We can replace it too.
 Or can we?
 
 Consider the 'fit' part of the story.
-Is it enough if it fits the receiver thead?
+Is it enough if it fits the receiver thread?
 No, here is a bunch of other aspects to consider:
 
 It may be part of a bigger system,
@@ -102,7 +102,7 @@ If it's a 32 bit signed integer, it can count approximately two billion.
 Not a problem to count customers in a neighborhood store,
 maybe an issue to count visitors to a site.
 
-Overflow is implicit behavior in this code with un-specified consequences.
+Overflow is implicit behavior in this code with unspecified consequences.
 
 **Who uses it? Which language?**
 Does this need to get integrated into a mobile app, or a lambda?
@@ -137,7 +137,7 @@ How would a non-programming person do it by hand?
 Anyone thinking of storing visit-logs?
 
 Let's say we store a visit log, which documents the time of each visit.
-We could pick what we want from it: filters to remove fradulent data;
+We could pick what we want from it: filters to remove fraudulent data;
 billing that takes hourly counts; analytics that counts by month or seasons.
 
 This is a flavor of _event sourcing_.

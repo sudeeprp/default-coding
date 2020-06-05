@@ -1,4 +1,4 @@
-# Specifiy with Tests
+# Specify with Tests
 
 By Specifying before Implementation,
 we ensure that the team knows 'when it's done'.

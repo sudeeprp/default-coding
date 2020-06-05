@@ -11,7 +11,7 @@ Here are some examples of entities:
 
 - A `customer` is identified by a `CustomerID`
 - A `customer` orders a `ride`
-- A `ride` is identifed by an `OrderID`
+- A `ride` is identified by an `OrderID`
 
 If you aren't familiar with SQL, you can quickly get a flavor for it
 over here: [https://www.w3schools.com/sql/](https://www.w3schools.com/sql/)

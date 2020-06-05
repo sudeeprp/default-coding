@@ -10,10 +10,10 @@ Coding is about the attitude of reducing ambiguity, more than 'knowing a languag
 
 Even when we talk to humans, an intention to bring clarity is more important
 than knowing the complete dictionary.
-In fact, simple and un-ambiguous communication requires
+In fact, simple and unambiguous communication requires
 deep understanding and heavy persistence.
 
-Simple and un-ambiguous? For who?
+Simple and unambiguous? For who?
 
 Let's explore code written for computers.
 It turns out that computers are so dumb,

@@ -56,7 +56,7 @@ while that's not the case in Java.
 
 ## The problem of Equality
 
-The equality operator often leads to un-intentional mistakes.
+The equality operator often leads to unintentional mistakes.
 In this section, we look at equality-checks of strings and floating-point decimals.
 
 ### Comparison of String objects in Java

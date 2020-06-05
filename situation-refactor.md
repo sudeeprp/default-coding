@@ -67,7 +67,7 @@ This way, we ensure that human mistakes are caught early.
 
 Today, code written for a feature
 makes up less than 5% of the experience delivered to a user.
-We build on top of language-runtimes, containers, operating systems, clouds...
+We build on top of runtime libraries, containers, operating systems, clouds...
 all of which contribute to the user's experience.
 
 None of them have built their software for our particular use.

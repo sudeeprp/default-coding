@@ -68,7 +68,7 @@ while still keeping it meaningful.
 In the above example, once we realize that it's getting complex,
 it would be good to take a step back and re-word the problem:
 
-1. Keep a timestamp and permitted demographics of visiting customers
+1. Keep a time-stamp and permitted demographics of visiting customers
 1. When a particular entry turns out to be a mistake, be able to mark it so.
 1. When requested, extract hourly counts
 1. Every night, extract statistics and publish

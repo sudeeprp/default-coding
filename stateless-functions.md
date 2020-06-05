@@ -51,7 +51,7 @@ The whole thing is testable function-by-function.
 Adding a test is trivial too.
 
 These functions can be used within a class to couple them with
-state (e.g., to cache the dictionary).
+state - like caching the dictionary).
 This illustrates the habit of modeling with stateless functions,
 testing thoroughly and using classes only when there's need for
 some state to be coupled.
