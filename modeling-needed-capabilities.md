@@ -1,12 +1,14 @@
 # Requirement Modeling Capabilities
 
-## What is modeling?
+## Model
 
-an example to follow or imitate.
+...is an example to follow or imitate.
 
-devise a representation of a system.
+## Modeling
 
-display (clothes) by wearing them.
+...to devise a representation of a system.
+
+...to display (clothes) by wearing them.
 
 `Exercise: <<model for customer and installation`
 

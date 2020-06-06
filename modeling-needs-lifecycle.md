@@ -15,6 +15,7 @@
 ## Recognizing the solution-scope
 
 In a savings-bank solution:
+
 - Financial security is out-of-scope
 - Access to banking facility is out-of-scope
 - Prevention of fraud...?

@@ -12,9 +12,9 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 
 **Use case**: Install and Commission
 
-**Primary Actor**: 
+**Primary Actor**:
 
-**System**: 
+**System**:
 
 **Extensions**:
 

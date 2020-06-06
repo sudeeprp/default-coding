@@ -4,6 +4,7 @@ Specification: an act of identifying something precisely
 
 ## The Quality of a Requirement
 
+<!-- markdownlint-disable MD033 -->
 <table>
 <tr><td>Essential</td><td>Implementation-free</td><td>Unambiguous*</td>
 </tr>
@@ -30,7 +31,7 @@ Specification: an act of identifying something precisely
 
 ## *Specification
 
-> If nothing else, make it Verifiable. Then pursue completion.
+> If overwhelming, make it Verifiable. Then pursue completion.
 
 "Count the number of visits to the store"
 
@@ -47,3 +48,5 @@ A complete specification is [expensive](form-fit-function.md).
 
 - Mind on the Customer
 - Write for the Audience
+
+[Who is my Audience?](modeling-needs-of-stakeholders.md)
