@@ -1,5 +1,9 @@
 # Requirement Modeling Capabilities
 
+![REbefore](images/engineer-before.png "RE-puzzled")
+
+What does it take for a Requirements Engineer to be successful?
+
 ## Model
 
 ...is an example to follow or imitate.
@@ -10,11 +14,42 @@
 
 ...to display (clothes) by wearing them.
 
-`Exercise: <<model for customer and installation`
+---
+
+![storeowner](images/store-owner.png "store-owner")
+`Exercise: Make a representation of customer need`
+
+The customer needs .... for .....
+
+It needs to be ....
+
+---
+
+![operations](images/operations.png)
+`Exercise: Make a representation of installation`
+
+Operations need .... for .....
+
+---
+
+![developers](images/developers.png)
+`Exercise: Make a representation of installation for developers`
+
+The implementation needs to .... for .....
+
+---
+
+## Requirement Engineer Capabilities
 
 - Cross-functional empathy
-- Express in the language of the audience
-- Technically grounded
+- Expression in the language of the audience
 - Precise and Accurate translation
+- Technically grounded
 
-<<end with 'code is a model'
+### ...across the spectrum of Models
+<!-- markdownlint-disable MD013 -->
+Customer Requirements | System Requirements | Module Requirements | Implementation | Deployment
+---|---|---|---|---
+Report on visit counts | Sensor, API & app with authentication | WebServer, Persistence | Record the visit in MongoDB | One-click container
+
+Can we really model all their needs? [Yes we can](modeling-needs-analogy-structure.md)

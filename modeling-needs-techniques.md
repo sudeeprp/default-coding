@@ -1,4 +1,10 @@
-# Tools for expressing Requirements
+# Techniques for expressing Requirements
+
+Software has been used to solve problems for decades.
+Over time, the expectations of customers [have evolved](modeling-needs-evolution-decades.md).
+
+
+## Our example: Counting visits in a Store
 
 ![store](images/store.png "store")
 
@@ -10,15 +16,19 @@
 
 Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writing_Effective_Use_Cases_Writing_Effective_Use_Cases)
 
-**Use case**: Install and Commission
+**Goal**: Install and Commission Visit-counter in one store
 
 **Primary Actor**:
 
 **System**:
 
+**Steps**:
+
 **Extensions**:
 
 **Variations**:
+
+---
 
 ## Behavior Specification
 

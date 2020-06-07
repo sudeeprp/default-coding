@@ -10,7 +10,9 @@
 
 ## Mapping Stakeholders
 
-<<Value chain
+![value-chain](images/value-chain.png "value chain")
+
+`Exercise: Map the stakeholder-value delivered by your project`
 
 ## Stakeholders Evolve
 
@@ -23,7 +25,27 @@ People change:
 
 ## Obstacles to Evolution
 
-<<if-else -to- goals
+### Complexity in Requirements
+
+`Exercise: What's wrong with this use-case?`
+
+**Goal**: User login
+
+**Primary Actor**: Store owner
+
+**System**: Reporting backend
+
+**Steps**:
+
+1. Store owner enters user-name and password
+1. Store owner presses login button, triggering request to the backend
+1. Store owner sees the reports
+
+**Extensions**:
+
+**Variations**:
+
+### Contradictions hidden by Ambiguity
 <<contradictions
 
 Try [functional decomposition of business flows](modeling-business-flows.md)

@@ -2,22 +2,34 @@
 
 ## Dive-and-Resurface
 
-<<white-blue-indigo from alistair
+![value-chain](images/value-chain.png "value chain")
 
 The [client needs framework](https://evolytics.com/blog/hierarchy-client-needs-framework-analysts/)
 relates to how it would look from a client's perspective.
 
-<<Relate to CRS & SyRS; ref.arch, platform.arch
-
 ## Questions
 
-- How is this implemented? <<forward
-- What if I change this? <<forward
-- Why is this implementation? <<reverse
+- **How** is this implemented? Dive!
+- **What if** I change this? Dive!
+- **Why** is this implementation? Resurface
 
 ## Difficulty in Bidirectional Tracing
 
 `Exercise: Dive and Resurface- why is logging there?`
+
+**Business goal**:
+
+**Project goal**:
+
+**User goal**:
+
+**Technical Responsibility**:
+
+**Interfaces**:
+
+**Implementation**:
+
+---
 
 ## Tooling
 
@@ -30,4 +42,4 @@ Capabilities of a Requirement Management tool:
 - Collaboration
 
 A few sample tools are listed [here](https://thedigitalprojectmanager.com/requirements-management-tools/)
-<<Walkthru Jira & one other tools
+<<Walkthru Jira & one other tool

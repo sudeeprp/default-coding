@@ -11,7 +11,7 @@ Why write requirements?
 - what?
 - what?
 
-`Exercise: Your customer owns a store. They need to count visitors.`
+`Exercise: Your customer owns a store and needs to count visitors. What do they need?`
 
 - what?
 - what?
@@ -38,5 +38,4 @@ Why write requirements?
 
 ## Challenges summary
 
-<<picture of RE with Forces, Stakeholders, CustCust
-<<bring in 'modeling'
+![stakeholders](images/store-stakeholders.png "store-stakeholders")

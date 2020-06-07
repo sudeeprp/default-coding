@@ -8,3 +8,5 @@
 - [Keep in sync](modeling-needs-syncreality.md) with need & implementation
 - [Elicitation](modeling-needs-elicitation.md) = customers know what they want
 - [Validation](modeling-needs-validation.md) = when customers don't know
+
+Poll: [What are you LEAST likely to use in the next 6 months?](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAY-7brxUNjNWWTIwRUEzVUpaVkkyTlo5NUE1SEdKMi4u)
