@@ -38,18 +38,37 @@ People change:
 **Steps**:
 
 1. Store owner enters user-name and password
-1. Store owner presses login button, triggering request to the backend
-1. Store owner sees the reports
+2. Store owner presses login button, triggering request to the backend
+3. Store owner sees the reports of their store
 
 **Extensions**:
 
+1a. Wrong credentials: Store owner sees message to retry. Back to step 1
+
+1b. Blocked account: Store owner told to contact admin
+
 **Variations**:
 
-### Contradictions hidden by Ambiguity
-<<contradictions
+Owner of a store-chain will see consolidated reports instead of a single store
 
-Try [functional decomposition of business flows](modeling-business-flows.md)
+---
+
+### Contradictions hidden by Ambiguity
+
+**Sample Ambiguous Statement**,
+motivated by data-ownership and cloud-capability:
+The Store owner shall always have access to their reports.
+
+`Exercise: What does it contradict with, in the above use-case?`
+
+---
+
+### The Remedy
+
+Try a [functional decomposition of business flows](modeling-business-flows.md)
 to overcome these obstacles.
+
+`Exercise: Make a functional decomposition of the above user-login use-case`
 
 ## Specifying for Stakeholders
 
