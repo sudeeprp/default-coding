@@ -5,6 +5,7 @@ Why write requirements?
 
 - why?
 - why?
+- why?
 
 `Exercise: You want to buy an apartment. What do you need?`
 
