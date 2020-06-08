@@ -47,7 +47,9 @@ The implementation needs to .... for .....
 - Technically grounded
 
 ### ...across the spectrum of Models
+
 <!-- markdownlint-disable MD013 -->
+
 Customer Requirements | System Requirements | Module Requirements | Implementation | Deployment
 ---|---|---|---|---
 Report on visit counts | Sensor, API & app with authentication | WebServer, Persistence | Record the visit in MongoDB | One-click container
