@@ -46,7 +46,7 @@ A complete specification is [expensive](form-fit-function.md).
 
 ## The way forward
 
-- Mind on the Customer
-- Write for the Audience
+- Mind on the Customer's context
+- Write for Stakeholders
 
 [Who is my Audience?](modeling-needs-of-stakeholders.md)

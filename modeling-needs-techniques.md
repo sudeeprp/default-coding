@@ -70,11 +70,19 @@ to distinguish the scope of the solution.
 
 ### Example
 
-As operations, I need .... to comission the visit-counter software in a store.
+As Field Engineer, I need installation interface/GUI to comission the visit-counter software in a store so that the customer has a full functioning solution.
 
 [**Acceptance Criteria**](modeling-needs-acceptance-criteria.md):
 
-The .... shall ....
+The installation interface shall
+
+- the app shall provide configuration of the software on android & ios
+- the app interfaces with hardware to provide test results - no false postives and false negatives
+- the app shall provide for manual entry of local wifi configuration, provided power and wifi router are present
+- the system shall automatically connect to the backend
+- the app shall indicate a successful or unsuccessful connection
+
+
 
 ---
 

@@ -68,7 +68,7 @@ Acceptance Criteria:
 
 ```BDD
 Scenario:
-  Given
-  When
-  Then
+  Given the count-data is available for the last two weeks
+  When the customer requests data from the last 8 days
+  Then the counts per day are shown along with the days and billing information
 ```
