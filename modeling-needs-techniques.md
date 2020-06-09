@@ -2,9 +2,9 @@
 
 Software has been used to solve problems for decades.
 Over time, the expectations of customers [have evolved](modeling-needs-evolution-decades.md).
+[Standardization](modeling-needs-standards.md) has tried to keep pace.
 
-
-## Our example: Counting visits in a Store
+## Our example: Visit-counter
 
 ![store](images/store.png "store")
 
@@ -14,7 +14,9 @@ Over time, the expectations of customers [have evolved](modeling-needs-evolution
 
 ## Use-cases
 
-Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writing_Effective_Use_Cases_Writing_Effective_Use_Cases)
+Use-cases aim to bridge the gap between a customer-need
+and its implementable specification.
+Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writing_Effective_Use_Cases_Writing_Effective_Use_Cases).
 
 **Goal**: Install and Commission Visit-counter in one store
 
@@ -30,15 +32,41 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 
 ---
 
+### What is missing in use-cases?
+
+Use-cases may-or-may-not specify the qualities required for acceptance.
+
+## User Stories
+
+User stories capture the user-goal and **Acceptance Criteria**
+to distinguish the scope of the solution.
+
+### Example
+
+As operations, I need .... to install and comission the visit-counter in a store.
+
+[**Acceptance Criteria**](modeling-needs-acceptance-criteria.md):
+
+The .... shall be ....
+
+---
+
 ## Behavior Specification
+
+The Acceptance Criteria can be specified as Scenarios:
+
+```BDD
+Given a store with an address
+When a store-owner requests installation
+Then the installation is scheduled
+ And operations is notified
+```
 
 ```BDD
 Given a store with an entrance
  And the pre-installed hardware
- And the installation store
-When a store-owner requests installation
-Then the installation is scheduled
- And operations is notified
+When field engineer completes installation
+Then ....
 ```
 
 ```BDD
@@ -46,3 +74,10 @@ Given an installed system
 When a customer visits the store
 Then the visit is recorded
 ```
+
+### Downstream effects of Scenarios
+
+- Scenarios can also be used to fine-grain and separate lifecycles.
+- The level of fine-graining contributes to the
+[real agile practices](modeling-real-agile.md)
+in the project

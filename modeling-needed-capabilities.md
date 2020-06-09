@@ -20,11 +20,13 @@ What does it take for a Requirements Engineer to be successful?
 `Exercise: Make a representation of customer need`
 
 The customer needs 
-- count record per day of week
+- visit-count-records per day of week
 - what visitors are buying
 - well maintained inventory
 
 for ensuring well-stocked store with fresh supplies
+
+---
 
 The customer needs 
 
@@ -42,7 +44,6 @@ It needs to be accurate +/- 5%
 It needs to be robust in all scenarios (day/night, power)
 
 It needs to be transparent = inform customer of any failure / failover
-
 
 ---
 

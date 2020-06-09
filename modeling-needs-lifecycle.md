@@ -21,4 +21,4 @@ In a savings-bank solution:
 - Prevention of fraud...?
 - Extension to ...?
 
-[How do we call out](modeling-business-flows.md) the out-of-scope items?
+`Exercise: Call the out-of-scope items from the` [customer context](modeling-needed-capabilities.md)
