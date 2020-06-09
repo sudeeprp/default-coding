@@ -2,6 +2,7 @@
 
 Software has been used to solve problems for decades.
 Over time, the expectations of customers [have evolved](modeling-needs-evolution-decades.md).
+
 [Standardization](modeling-needs-standards.md) has tried to keep pace.
 
 ## Our example: Visit-counter
@@ -50,6 +51,18 @@ As operations, I need .... to install and comission the visit-counter in a store
 The .... shall be ....
 
 ---
+
+Acceptance Criteria can be expressed in terms of
+[rules or examples](modeling-needs-acceptance-criteria.md)
+
+`Exercise:`
+[Accpetance Critique](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAY-7brxUM1E3STBTRFlHWUNUVEM4MVkzWDFZTjhYWi4u)
+
+> 'Good' acceptance criteria = lower
+[transaction costs](modeling-real-agile.md)
+
+`Exercise:`
+[Acceptance Authoring](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAY-7brxUM0RGVTBQUlhCSlZDOUFBTTkyODM5WEFNVi4u)
 
 ## Behavior Specification
 
