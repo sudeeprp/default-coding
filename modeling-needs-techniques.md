@@ -21,15 +21,41 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 
 **Goal**: Install and Commission Visit-counter in one store
 
-**Primary Actor**:
+**Primary Actor**: Field engineer
 
-**System**:
+**System**: Installation kit, Backend (cloud) for count-records
 
 **Steps**:
 
+1. Field engineer looks up location of installation
+2. Field engineer looks up the order and picks the right kit
+3. Field engineer uses tools for installation
+4. Field engineer completes hardware installation and power-on
+5. Field engineer performs initial test after power-on
+6. Field engineer sets up the profile / configuration
+7. Backend system sends success notification to Field Engineer and Store-owner
+
 **Extensions**:
 
+2a. the kit is not available
+
+3a. Field engineer doesn't have enough tools for a particular site
+
+5a. Field engineer notes Initial test failure on power-on
+
+`Field engineer looks up logging`
+
+5b. Improper wiring to camera/backup
+
+5b. There is no backup power
+
+
+
 **Variations**:
+
+Field engineer has to perform Steps 3-6 multiple times
+
+Backend system sends a single notification for the entire installation
 
 ---
 
@@ -44,11 +70,11 @@ to distinguish the scope of the solution.
 
 ### Example
 
-As operations, I need .... to install and comission the visit-counter in a store.
+As operations, I need .... to comission the visit-counter software in a store.
 
 [**Acceptance Criteria**](modeling-needs-acceptance-criteria.md):
 
-The .... shall be ....
+The .... shall ....
 
 ---
 
