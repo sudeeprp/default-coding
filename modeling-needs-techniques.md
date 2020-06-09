@@ -37,19 +37,17 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 
 **Extensions**:
 
-2a. the kit is not available
+2 a. the kit is not available
 
-3a. Field engineer doesn't have enough tools for a particular site
+3 a. Field engineer doesn't have enough tools for a particular site
 
-5a. Field engineer notes Initial test failure on power-on
+5 a. Field engineer notes Initial test failure on power-on
 
 `Field engineer looks up logging`
 
-5b. Improper wiring to camera/backup
+5 b. Improper wiring to camera/backup
 
-5b. There is no backup power
-
-
+5 b. There is no backup power
 
 **Variations**:
 
@@ -59,7 +57,7 @@ Backend system sends a single notification for the entire installation
 
 ---
 
-### What is missing in use-cases?
+### Use-cases vs User-Stories
 
 Use-cases may-or-may-not specify the qualities required for acceptance.
 
@@ -70,19 +68,21 @@ to distinguish the scope of the solution.
 
 ### Example
 
-As Field Engineer, I need installation interface/GUI to comission the visit-counter software in a store so that the customer has a full functioning solution.
+As Field Engineer, I need installation interface/GUI
+to commission the visit-counter software in a store
+so that the customer has a full functioning solution.
 
 [**Acceptance Criteria**](modeling-needs-acceptance-criteria.md):
 
 The installation interface shall
 
-- the app shall provide configuration of the software on android & ios
-- the app interfaces with hardware to provide test results - no false postives and false negatives
-- the app shall provide for manual entry of local wifi configuration, provided power and wifi router are present
+- the app shall provide configuration of the software on android & iOS
+- the app interfaces with hardware to provide test results -
+no false positives and false negatives
+- the app shall provide for manual entry of local wifi configuration,
+provided power and wifi router are present
 - the system shall automatically connect to the backend
 - the app shall indicate a successful or unsuccessful connection
-
-
 
 ---
 
@@ -90,7 +90,7 @@ Acceptance Criteria can be expressed in terms of
 [rules or examples](modeling-needs-acceptance-criteria.md)
 
 `Exercise:`
-[Accpetance Critique](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAY-7brxUM1E3STBTRFlHWUNUVEM4MVkzWDFZTjhYWi4u)
+[Acceptance Critique](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAY-7brxUM1E3STBTRFlHWUNUVEM4MVkzWDFZTjhYWi4u)
 
 > 'Good' acceptance criteria = lower
 [transaction costs](modeling-real-agile.md)
@@ -124,7 +124,7 @@ Then the visit is recorded
 
 ### Downstream effects of Scenarios
 
-- Scenarios can also be used to fine-grain and separate lifecycles.
+- Scenarios can also be used to fine-grain and separate life-cycles.
 - The level of fine-graining contributes to the
 [real agile practices](modeling-real-agile.md)
 in the project

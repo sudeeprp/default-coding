@@ -1,8 +1,11 @@
-# Reality Check
+# Reality Sync
+
+It is common to see requirements drift away from the implementation.
+How do we keep the requirements useful?
 
 ## Tracking and Tracing Requirements
 
-<<Regulatory, Support
+<<For Regulatory, Support
 
 Common fields to describe a requirement:
 

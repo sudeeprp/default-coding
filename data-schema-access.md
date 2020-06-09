@@ -14,7 +14,7 @@ Here are some examples of entities:
 - A `ride` is identified by an `OrderID`
 
 If you aren't familiar with SQL, you can quickly get a flavor for it
-over here: [https://www.w3schools.com/sql/](https://www.w3schools.com/sql/)
+over here: [w3schools SQL interpreter](https://www.w3schools.com/sql/)
 
 ## Normalization
 

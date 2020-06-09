@@ -19,7 +19,8 @@ What does it take for a Requirements Engineer to be successful?
 ![storeowner](images/store-owner.png "store-owner")
 `Exercise: Make a representation of customer need`
 
-The customer needs 
+The customer needs
+
 - visit-count-records per day of week
 - what visitors are buying
 - well maintained inventory
@@ -28,9 +29,9 @@ for ensuring well-stocked store with fresh supplies
 
 ---
 
-The customer needs 
+The customer needs
 
-- billing counters & billing personel
+- billing counters & billing personnel
 - real time data
 - fast track counters
 - access to goods
@@ -50,13 +51,12 @@ It needs to be transparent = inform customer of any failure / failover
 ![operations](images/operations.png)
 `Exercise: Make a representation of installation`
 
-Operations need 
+Operations need
 
 - plan timing
 - location / address
 - positioning
 - tools - hardware + software
-
 
 for quick installation and commissioning
 
@@ -64,32 +64,28 @@ It needs to have passed a trial run
 
 It needs to have a verification mechanism
 
-
-
-
-
 ---
 
 ![developers](images/developers.png)
 `Exercise: Make a representation of installation for developers`
 
-The implementation needs to 
+The implementation needs to
 
-be flexible / portable 
+be flexible / portable
 
 for compatibility
 
 ---
 
-The implementation needs to 
+The implementation needs to
 
-be architected with strong alignment between customer need and platform 
+architect with strong alignment between customer need and platform
 
 for reusing existing software (COTS)
 
 ---
 
-The implementation needs to 
+The implementation needs to
 
 have a good interface + logging
 

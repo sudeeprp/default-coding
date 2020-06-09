@@ -8,11 +8,11 @@
 
 ![needslongevity](images/longevity-customer-need.png "need lifetimes")
 
-> Tip: Keep lifecycles separate
+> Tip: Keep life-cycles separate
 
 `Exercise: Lifecycle of needs in a store-visit-counter`
 
-## Specifying the Customer for Stakeholders
+## Specifying Customer Needs
 
 Use a story or a context
 
@@ -20,24 +20,23 @@ Use a story or a context
 
 Requirement | Context | Specification
 ---|---|---
-No memory leaks | Mobile Ultrasound, continuous operation for 2 days max | X no. of cycles without deterioration of performance, stable working-set and commit-charge not exceeding 3.5GB
+No memory leaks | Mobile Ultrasound, continuous operation for 2 days max | X no. of cycles without deterioration of performance, stable working-set and commit-charge not exceeding 3.5 GB
 No training required | ATM front-end | Start-screen same as previous version
-X-ray latency <1s | Used during surgery | One in 20 measurements can go above 1s, with max not exceeding 2.5s
+X-ray latency <1 second | Used during surgery | One in 20 measurements can go above 1 second, with max not exceeding 2.5 seconds
 
 How about regulatory requirements?
 
 Regulation | Context | Specification
 ---|---|---
 Data Privacy in car entertainment systems | Consequence of misuse: Loss of branding & trust | Hardware-level encryption
+Medical images during treatment | Entry-restricted operation theater | None
+Salary data in HR workplace | Confidentiality breach | Screen-saver + privacy filter screen
+Face-recognition to count visits | Same as CCTV in store | Agreement with store-owner
 
-<<relate to security privacy
 ## Recognizing the solution-scope
 
-In a savings-bank solution:
+Any Product Quality will have dependency on the environment or the user.
 
-- Financial security is out-of-scope
-- Access to banking facility is out-of-scope
-- Prevention of fraud...?
-- Extension to ...?
+> Clarify product responsibility vs user's responsibility.
 
 `Exercise: Call the out-of-scope items from the` [customer context](modeling-needed-capabilities.md)

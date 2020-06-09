@@ -1,9 +1,9 @@
 # Acceptance Criteria
 
-Acceptance Criteria:
+Acceptance Criteria
 
 - Express when a customer would see value from the software
-- Specify the pre-conditions for a handover
+- Specify the preconditions for a handover
 - Quantify 'acceptable experience'
 - Clarify scope
 
@@ -15,10 +15,11 @@ Acceptance Criteria:
 ### Rules Oriented
 
 A rule is:
+
 - A statement that **must be** satisfied
 - **must be** = sentence with 'shall' / 'is' / 'are' ( = assertions)
 
-#### Bad Example:
+#### Bad Example
 
 Use-case: Report visitor-counts
 
@@ -33,7 +34,7 @@ the counts shall change to reflect the new period.
 
 ---
 
-#### Better Example:
+#### Better Example
 
 Use-case: Report visitor-counts
 
@@ -43,7 +44,7 @@ so that _I can predict my resources for the near future_.
 Acceptance Criteria:
 
 - Counts are reported against dates and days of the week
-- Anomalies (e.g., holidays) are distinguishable
+- Anomalies (like holidays) are distinguishable
 
 ---
 

@@ -43,9 +43,9 @@ People change:
 
 **Extensions**:
 
-1a. Wrong credentials: Store owner sees message to retry. Back to step 1
+1 a. Wrong credentials: Store owner sees message to retry. Back to step 1
 
-1b. Blocked account: Store owner told to contact admin
+1 b. Blocked account: Store owner told to contact admin
 
 **Variations**:
 

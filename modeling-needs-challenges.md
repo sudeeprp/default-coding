@@ -4,7 +4,7 @@ Customers see the effect of our code. That's what they pay for.
 Why write requirements?
 
 - Traceability
-- Breaking down a requirement: Func & non-functional
+- Breaking down a requirement: Functional & non-functional
 - Accountability
 - Reliability of the product
 - Legality / Contractual
@@ -25,7 +25,6 @@ Why write requirements?
 - Facilities
 - Water resources
 - Parking facility
-- Reachability
 - Vicinity
 - Quality of work = experience
 - what?
@@ -60,14 +59,15 @@ Why write requirements?
 - Sales, offers-campaigns: They provide incentive
 - Grocery suppliers: They need information on the stock to deliver
 - Customer Support: When it doesn't work, they handle the call
-- Field engineers: Install, comission, repair, upgrade
+- Field engineers: Install, commission, repair, upgrade
 
 ## Challenge #3: Customer's Customer
 
 `Exercise: How can 'counting' help visitors?`
 
 - Visitors to the store. They need to visit. They need quick service
-- Grocery suppliers: They need information on the stock to deliver. Visitors see a well-stocked store + fresh supplies.
+- Grocery suppliers: They need information on the stock to deliver.
+Visitors see a well-stocked store + fresh supplies.
 - Security - incoming + outgoing footfall & bills generated
 - Savings and offers - to visitors when volume is high/low
 - Saves customer time
