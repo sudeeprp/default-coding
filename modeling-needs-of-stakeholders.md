@@ -8,6 +8,10 @@
 
 `Exercise: List the stakeholders in your project`
 
+## Customer Value-chain
+
+![custvalue](images/value-chain-count-to-loyalty.png "customer value")
+
 ## Mapping Stakeholders
 
 ![value-chain](images/value-chain.png "value chain")

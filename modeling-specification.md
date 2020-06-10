@@ -5,6 +5,7 @@ Specification: an act of identifying something precisely
 ## The Quality of a Requirement
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <tr><td>Essential</td><td>Implementation-free</td><td>Unambiguous*</td>
 </tr>
@@ -42,11 +43,13 @@ Specification: an act of identifying something precisely
 - Uptime?
 - Privacy?
 
-A complete specification is [expensive](form-fit-function.md).
+> A complete specification is [expensive](form-fit-function.md).
+Use [Analogies](modeling-needs-analogy-structure.md)
+for guidance. Relate them to all stakeholders.
 
 ## The way forward
 
 - Mind on the Customer's context
-- Write for Stakeholders
+- Write for your Audience
 
 [Who is my Audience?](modeling-needs-of-stakeholders.md)

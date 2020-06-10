@@ -104,23 +104,31 @@ The Acceptance Criteria can be specified as Scenarios:
 
 ```BDD
 Given a store with an address
-When a store-owner requests installation
-Then the installation is scheduled
+When a store-owner requests installation at 2 PM
+Then the installation is scheduled from 2-6 PM
  And operations is notified
 ```
 
 ```BDD
-Given a store with an entrance
- And the pre-installed hardware
-When field engineer completes installation
+Given wired-up hardware with pre-installed software
+When the field engineer completes first power-up
+ And connects his mobile to the device-hotspot with SSID "v-counter"
 Then ....
 ```
 
 ```BDD
-Given an installed system
+Given an installed, powered-up system
 When a customer visits the store
 Then the visit is recorded
 ```
+
+> Scenarios can bridge stakeholders across the spectrum
+
+<!-- markdownlint-disable MD013 -->
+
+Customer Requirements | System Requirements | Module Requirements | Implementation | Deployment
+---|---|---|---|---
+Report on visit counts | Sensor, API & app with authentication | WebServer, Persistence | Record the visit in MongoDB | One-click container
 
 ### Downstream effects of Scenarios
 
