@@ -4,7 +4,7 @@
 
 ## Early Validation
 
-<<model-simulations, wireframes
+<<model-simulations, wire-frames
 
 ## Continuous Validation
 

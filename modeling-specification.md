@@ -17,12 +17,16 @@ Specification: an act of identifying something precisely
 
 `Exercise: Critique this- "Count the number of visits to the store"`
 
-- What is lacking?
+- Feasible?
+- Unambiguous - no (ambiguous)
+- Verifiable - ?
 - What is lacking?
 
 `Exercise: Critique this- "Notify when the store gets full"`
 
-- What is lacking?
+- Complete - what is full?
+- Ambiguous
+- How to notify? Whom to notify
 - What is lacking?
 
 `Exercise: Critique this- "Send SMS to a configured mobile, when store gets full"`

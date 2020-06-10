@@ -111,9 +111,10 @@ Then the installation is scheduled from 2-6 PM
 
 ```BDD
 Given wired-up hardware with pre-installed software
+ And our app is installed on field engineer's phone
 When the field engineer completes first power-up
  And connects his mobile to the device-hotspot with SSID "v-counter"
-Then ....
+Then Setup instructions should be visible
 ```
 
 ```BDD
@@ -132,7 +133,7 @@ Report on visit counts | Sensor, API & app with authentication | WebServer, Pers
 
 ### Downstream effects of Scenarios
 
-- Scenarios can also be used to fine-grain and separate life-cycles.
-- The level of fine-graining contributes to the
+Scenarios can also fine-grain and separate life-cycles.
+Such isolation contributes to the
 [real agile practices](modeling-real-agile.md)
-in the project
+in the project.

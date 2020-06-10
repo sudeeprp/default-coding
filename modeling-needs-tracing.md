@@ -30,16 +30,3 @@ relates to how it would look from a client's perspective.
 **Implementation**:
 
 ---
-
-## Tooling
-
-Capabilities of a Requirement Management tool:
-
-- Maintain Relationships: Dependencies, Extensions, ...
-- Reuse
-- Integrate
-- Analyze Impact & Run tests
-- Collaboration
-
-A few sample tools are listed [here](https://thedigitalprojectmanager.com/requirements-management-tools/)
-<<Walkthru Jira & one other tool

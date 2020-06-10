@@ -34,5 +34,7 @@ lifecycle
 webserver
 wifi
 ios
+jira
+pre-release
 un
  - investment-benefits.md

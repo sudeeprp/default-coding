@@ -5,34 +5,61 @@ How do we keep the requirements useful?
 
 ## Tracking and Tracing Requirements
 
-<<For Regulatory, Support
+### Identification
 
-Common fields to describe a requirement:
+Unique identifier, referenced in test cases and reports.
 
-- ID, date, version, status, priority, risk, stakeholders
+### Organization
+
+The overall organization can be:
+
+- Hierarchical / horizontal
+- Vertical-slicing
+
+Requirement Characteristics:
+
+- Priority
+- Stakeholders
+- Status / Maturity
+- Product Risk / Hazard
+- Business Risk
+- Project Risk
+
+### Relationships
+
+Requirement | Relationships | Requirement
+---|---|---
+Create-account | details | Enroll
+Build | depends on | Compile
+Development Environment | uses | Auto-complete
+Send SMS | implements | Notify user
+
+### Version Control
+
+- date
+- version
+
+<<link illustration of version control
 
 ## Typical Requirement Workflow
 
-<<Proto to production to end-of-life
-
-## Requirements traceability needs
-
-<<Verification, design
+![stdlife](images/lifecycle-standard.png "standard lifecycle")
 
 ## Failures in Tracking and Tracing
 
 ### Implementation overtakes requirements
 
-Requirements are hard to change
-
-<<impact analysis: Change in 3rd party dependency, user-convenience (login from alistair)
+- Because requirements are hard to change
+- Cross-system changes are hard to capture
+- Change in 3rd party dependency gives different behavior
 
 ### Legacy shackles are unknown
 
-<<successful product, unclear what users like
+- Product with large installed base; unclear what users like
+- Profits feed Organization-complexity and fear of change
 
 ## Strategies for Success
 
-- [Hierarchy with bidirectional tracing](modeling-needs-hierarchy.md)
-- [Tracking tools with approval-workflow](modeling-needs-hierarchy.md)
+- [Hierarchy with bidirectional tracing](modeling-needs-tracing.md)
+- [Tracking-tools with approval-workflow](modeling-needs-tools.md)
 - [Requirements = Tests](modeling-needs-as-tests.md)
