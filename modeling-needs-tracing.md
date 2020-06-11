@@ -13,6 +13,13 @@ relates to how it would look from a client's perspective.
 - **What if** I change this? Dive!
 - **Why** is this implementation? Resurface
 
+## Tracing Dimensions
+
+'Detailing' can happen at the same level of lifecycle:
+Such as 'Safety' being quantified in 'Safe access to savings'
+
+![lifecycle](images/hierarchy-customer-need.png "customer needs")
+
 ## Difficulty in Bidirectional Tracing
 
 `Exercise: Dive and Resurface- why is logging there?`
@@ -30,3 +37,13 @@ relates to how it would look from a client's perspective.
 **Implementation**:
 
 ---
+
+### Relationships
+
+Requirement | Relationships | Requirement
+---|---|---
+Investment grade | **quantifies** | Safe access to savings
+Create-account | **details** | Enroll
+Build | **depends on** | Compile
+Development Environment | **uses** | Auto-complete
+Send SMS | **implements** | Notify user

@@ -2,14 +2,17 @@
 
 ## Simplification by Automation
 
-<<Software update flow example
-<<When do we say it's successful?
+There are many flavors of Automation:
+
+- Automate the performance of the test (check remains manual)
+- Automate the check (performance remains manual)
+- Automate both performance and check
+- Automate the production process
+
+`Exercise: When is Software update flow successful?
+What part of it can we automate?`
 
 ## Impact Analysis
 
-<<With and without tests
-<<Augmenting traceability with coverage
-
-## Evolution of DSL from tests
-
-<<Non-repetition of tests: Check vitals in range
+- With automation: Ideally, just run it
+- Without automation: Change-Control-Board = don't try it yourself!
