@@ -2,16 +2,32 @@
 
 ...the process of getting information from someone
 
-## Observation / Ethnography
+![businessvalue](images/value-chain.png "business value chain")
 
-[This dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzU5YTg0YmItMjJmMS00ODJjLWI3MDItYTE2YjY4MTIzMzRhIiwidCI6IjAwNzdjMzI2LWI1YjctNDg2NC1hMmFjLWZlOTE4M2FiMzE4YiJ9)
-is about academics in rural schools. It is data-driven.
-<<What is missed is the need for PDF every Monday.
+## As a Buyer
 
-## Challenge & Question
+### RFI = Request for Information
 
-<<Use analogies
+...getting to know the domain
 
-## Talk
+### RFP = Request for Proposal
 
-<<Other situations from Alistair
+...options, price, choices
+
+### RFQ = Request for Quote
+
+...decisions, processes, deliveries
+
+## As a Provider
+
+### Observation / Ethnography
+
+
+### Challenge & Question
+
+
+### Brainstorm with Focus Groups
+
+
+### Interface / Acceptance analysis
+

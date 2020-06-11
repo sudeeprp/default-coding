@@ -24,17 +24,17 @@ Such as 'Safety' being quantified in 'Safe access to savings'
 
 `Exercise: Dive and Resurface- why is logging there?`
 
-**Business goal**:
+**Business goal**: Higher AMC, More installations, Valuation
 
-**Project goal**:
+**Project goal**: Develop log-export funtionality
 
-**User goal**:
+**User goal**: Quick diagnosis and fixing (CRS)
 
-**Technical Responsibility**:
+**Technical Responsibility**: Files in some format, easy to read (SyRS)
 
-**Interfaces**:
+**Interfaces**: Upload via API (auto) / download on request (manual)
 
-**Implementation**:
+**Implementation**: Export log-files from equipment
 
 ---
 

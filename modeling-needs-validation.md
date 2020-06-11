@@ -4,12 +4,12 @@
 
 ## Early Validation
 
-<<model-simulations, wire-frames
+model-simulations, wire-frames
 
 ## Continuous Validation
 
-<<feature-toggles
+feature-toggles
 
 ## Pre-release Validation
 
-<<hazard/usability/environment/power/network
+hazard/usability/environment/power/network
