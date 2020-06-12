@@ -13,7 +13,7 @@ ALM (Application Lifecycle Management) to put them together
 
 Unique identifier, referenced in test cases and reports.
 
-### Requirement Characteristics:
+### Characteristics
 
 - Priority
 - Stakeholders
@@ -27,8 +27,7 @@ Unique identifier, referenced in test cases and reports.
 - date
 - version
 
-
-## Capabilities:
+## Capabilities
 
 - Maintain Relationships: Dependencies, Extensions, ...
 - Reuse

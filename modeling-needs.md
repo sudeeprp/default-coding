@@ -8,4 +8,3 @@
 - [Keep in sync](modeling-needs-syncreality.md) with need & implementation
 - [Elicitation](modeling-needs-elicitation.md) = customers know what they want
 - [Validation](modeling-needs-validation.md) = when customers don't know
-

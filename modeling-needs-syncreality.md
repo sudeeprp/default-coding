@@ -14,7 +14,7 @@ It opens both
 
 ## Decomposition
 
-Requirements can be decomposed in 
+Requirements can be decomposed in
 [Hierarchical and Vertical](modeling-needs-horizontal-vertical.md)
 ways.
 

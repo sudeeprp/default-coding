@@ -26,7 +26,7 @@ Such as 'Safety' being quantified in 'Safe access to savings'
 
 **Business goal**: Higher AMC, More installations, Valuation
 
-**Project goal**: Develop log-export funtionality
+**Project goal**: Develop log-export functionality
 
 **User goal**: Quick diagnosis and fixing (CRS)
 
