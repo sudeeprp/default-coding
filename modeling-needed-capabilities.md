@@ -21,9 +21,8 @@ What does it take for a Requirements Engineer to be successful?
 
 The customer needs
 
-- visit-count-records per day of week
-- what visitors are buying
-- well maintained inventory
+- what?
+- what?
 
 for ensuring well-stocked store with fresh supplies
 
@@ -31,20 +30,16 @@ for ensuring well-stocked store with fresh supplies
 
 The customer needs
 
-- billing counters & billing personnel
-- real time data
-- fast track counters
-- access to goods
-- product mix (prediction/analytics)
-- clear labeling (price, expiry)
+- what?
+- what?
 
 for ensuring quick service
 
-It needs to be accurate +/- 5%
+It needs to be `what?`
 
-It needs to be robust in all scenarios (day/night, power)
+It needs to be `what?`
 
-It needs to be transparent = inform customer of any failure / failover
+It needs to be `what?`
 
 ---
 
@@ -53,45 +48,31 @@ It needs to be transparent = inform customer of any failure / failover
 
 Operations need
 
-- plan timing
-- location / address
-- positioning
-- tools - hardware + software
+- what?
+- what?
 
 for quick installation and commissioning
 
-It needs to have passed a trial run
+It needs to be `what?`
 
-It needs to have a verification mechanism
+It needs to be `what?`
+
+It needs to be `what?`
 
 ---
 
 ![developers](images/developers.png)
 `Exercise: Make a representation of installation for developers`
 
-The implementation needs to
-
-be flexible / portable
-
-for compatibility
+The implementation needs to ...
 
 ---
 
-The implementation needs to
-
-architect with strong alignment between customer need and platform
-
-for reusing existing software (COTS)
+The implementation needs to ...
 
 ---
 
-The implementation needs to
-
-have a good interface + logging
-
-for quick trouble-shooting
-
-It needs to be clear, concise...
+The implementation needs to ...
 
 ---
 

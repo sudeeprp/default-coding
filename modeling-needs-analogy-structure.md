@@ -1,7 +1,5 @@
 # Modeling needs
 
-Poll: [Do you prefer colloquial or legal requirements?](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAY-7brxUQjlHNDFXSEtBQUpKSlZXSEVBTEZYOU9JNC4u)
-
 ## Modeling to Understand
 
 ### Use-case: Power auction
@@ -14,13 +12,12 @@ Analogy = e-bay
 
 ### Smaller analogies
 
-Register for conference & pay = shopping cart
-
-MQTT 'at least once' delivery = movie streaming
-
-MQTT 'fire and forget' = live telecast
-
-SQL = rows+columns / MongoDB = documents / JSON = hierarchical
+- Register for conference & pay = shopping cart
+- MQTT 'at least once' delivery = movie streaming
+- MQTT 'fire and forget' = live telecast
+- SQL = rows+columns
+- MongoDB = documents
+- JSON = hierarchical
 
 ---
 
