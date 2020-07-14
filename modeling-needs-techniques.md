@@ -29,31 +29,17 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 
 1. Field engineer looks up location of installation
 2. Field engineer looks up the order and picks the right kit
-3. Field engineer uses tools for installation
-4. Field engineer completes hardware installation and power-on
-5. Field engineer performs initial test after power-on
-6. Field engineer sets up the profile / configuration
-7. Backend system sends success notification to Field Engineer and Store-owner
+3. Field engineer ...
 
 **Extensions**:
 
 2 a. the kit is not available
 
-3 a. Field engineer doesn't have enough tools for a particular site
-
-5 a. Field engineer notes Initial test failure on power-on
-
-`Field engineer looks up logging`
-
-5 b. Improper wiring to camera/backup
-
-5 b. There is no backup power
+...
 
 **Variations**:
 
-Field engineer has to perform Steps 3-6 multiple times
-
-Backend system sends a single notification for the entire installation
+Field engineer has to perform ... multiple times
 
 ---
 
@@ -74,15 +60,7 @@ so that the customer has a full functioning solution.
 
 [**Acceptance Criteria**](modeling-needs-acceptance-criteria.md):
 
-The installation interface shall
-
-- the app shall provide configuration of the software on android & iOS
-- the app interfaces with hardware to provide test results -
-no false positives and false negatives
-- the app shall provide for manual entry of local wifi configuration,
-provided power and wifi router are present
-- the system shall automatically connect to the backend
-- the app shall indicate a successful or unsuccessful connection
+The installation interface shall ...
 
 ---
 
