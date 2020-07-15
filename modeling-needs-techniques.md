@@ -29,11 +29,25 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 
 1. Field engineer looks up location of installation
 2. Field engineer looks up the order and picks the right kit
-3. Field engineer ...
+3. Field engineer ensures prerequisites: stable power, internet connection
+4. Field engineer travels to the site
+5. Field engineer takes measurements
+6. Field engineer agrees the position and accessibility with store owner
+7. Field engineer records owner-permission to commission, with passwords for internet connection
+8. Field engineer installs the hardware and does a power-on
+9. Field engineer installs the software
+10. Field engineer performs startup checks
+11. Backend offers a test-mode to the Field engineer
+11. Field engineer signs off test results with store owner
+13. Field engineer switches backend to production mode
 
 **Extensions**:
 
 2 a. the kit is not available
+
+8 a. Power on unsuccessful
+
+11 a. Test mode is not required
 
 ...
 
