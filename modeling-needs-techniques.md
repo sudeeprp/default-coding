@@ -53,7 +53,7 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 
 **Variations**:
 
-Field engineer has to perform ... multiple times
+Field engineer has to perform steps 8, 9, 10 multiple times
 
 ---
 
@@ -74,7 +74,12 @@ so that the customer has a full functioning solution.
 
 [**Acceptance Criteria**](modeling-needs-acceptance-criteria.md):
 
-The installation interface shall ...
+- We need an app on the playstore that the Field Engineers can install on their own mobile
+- Anyone should not have access to configure the system/device: Only Field engineers with valid credentials can configure
+- Proper error response with correction suggestions ( if *misconfigured *etc ) in *GUI/log-file/popup...
+- DEFOA: The instlalation kit shall *notify the Field Engineer when it is powered-on and there is a defect.
+- The system shall provide a *notification to Field Engineer , customer and the seller company/person when installation process is done including connection to backend
+
 
 ---
 

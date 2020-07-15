@@ -28,10 +28,10 @@ How about regulatory requirements?
 
 Regulation | Context | Specification
 ---|---|---
-Data Privacy in car entertainment systems | Consequence of misuse: Loss of branding & trust | Hardware-level encryption
-Medical images during treatment | Entry-restricted operation theater | None
-Salary data in HR workplace | Confidentiality breach | Screen-saver + privacy filter screen
-Face-recognition to count visits | Same as CCTV in store | Agreement with store-owner
+Data Privacy in car entertainment systems | ? | ?
+Medical images during treatment | ? | ?
+Salary data in HR workplace | ? | ?
+Face-recognition to count visits | ? | ?
 
 ## Recognizing the solution-scope
 
