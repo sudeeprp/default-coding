@@ -15,37 +15,17 @@ Specification: an act of identifying something precisely
 </tr>
 </table>
 
-`Exercise: Critique this- "Count the number of visits to the store"`
+> Make it Verifiable. Then pursue completion.
 
-- Feasible?
-- Unambiguous - no (ambiguous)
-- Verifiable - ?
-- What is lacking?
-
-`Exercise: Critique this- "Notify when the store gets full"`
-
-- Complete - what is full?
-- Ambiguous
-- How to notify? Whom to notify
-- What is lacking?
-
-`Exercise: Critique this- "Send SMS to a configured mobile, when store gets full"`
+`Exercise: Critique this- "The device shall sync to the backend when online. It shall store footfalls temporarily when offline"`
 
 - What is lacking?
+
+`Exercise: Critique this- "The system shall notify the store-owner when the store gets full"`
+
 - What is lacking?
 
 ## *Specification
-
-> If overwhelming, make it Verifiable. Then pursue completion.
-
-"Count the number of visits to the store"
-
-- Count pets? Children? Age groups?
-- Error tolerance: Staff? Suppliers?
-- Deployment cost?
-- Latency?
-- Uptime?
-- Privacy?
 
 > A complete specification is [expensive](form-fit-function.md).
 Use [Analogies](modeling-needs-analogy-structure.md)

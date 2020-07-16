@@ -10,7 +10,7 @@
 
 > Tip: Keep life-cycles separate
 
-`Exercise: Lifecycle of needs in a store-visit-counter`
+`Exercise: Lifecycle of needs in a store-visit-dashboard`
 
 ## Specifying Customer Needs
 
@@ -28,15 +28,13 @@ How about regulatory requirements?
 
 Regulation | Context | Specification
 ---|---|---
-Data Privacy in car entertainment systems | ? | ?
-Medical images during treatment | ? | ?
-Salary data in HR workplace | ? | ?
-Face-recognition to count visits | ? | ?
+Data Privacy in car entertainment systems | Privacy: Service, Used-car sale, Branding/reputation, Usability | No uploads, add warning in manual
+Display of Medical images during treatment | Treatment in Op.theater, GDPR, patient's assets/contracts | Primary ident, Secondary
+Salary data in HR workplace | Privacy in office / ... confidentiality | Screensaver, polarizing sheet, timeout screen-lock
+Face-recognition to count visits | Like CCTV | Like CCTV
 
 ## Recognizing the solution-scope
 
-Any Product Quality will have dependency on the environment or the user.
+Any Product Quality will be influenced by the environment.
 
-> Clarify product responsibility vs user's responsibility.
-
-`Exercise: Call the out-of-scope items from the` [customer context](modeling-needed-capabilities.md)
+> Watch the system-boundary. 
