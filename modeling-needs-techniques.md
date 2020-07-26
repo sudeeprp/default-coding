@@ -28,33 +28,18 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 **Steps**:
 
 1. Field engineer looks up location of installation
-1. Field engineer looks up the order and picks the right kit
-1. Field engineer ensures prerequisites: stable power, internet connection
-1. Field engineer travels to the site
-1. Field engineer takes measurements
-1. Field engineer agrees the position and accessibility with store owner
-1. Field engineer records owner-permission to commission,
-with passwords for internet connection
-1. Field engineer installs the hardware and does a power-on
-1. Field engineer installs the software
-1. Field engineer performs startup checks
-1. Backend offers a test-mode to the Field engineer
-1. Field engineer signs off test results with store owner
-1. Field engineer switches backend to production mode
+2. Field engineer looks up the order and picks the right kit
+3. Field engineer ...
 
 **Extensions**:
 
 2 a. the kit is not available
 
-8 a. Power on unsuccessful
-
-11 a. Test mode is not required
-
 ...
 
 **Variations**:
 
-Field engineer has to perform steps 8, 9, 10 multiple times
+Field engineer has to perform ... multiple times
 
 ---
 
@@ -75,7 +60,7 @@ so that the customer has a full functioning solution.
 
 [**Acceptance Criteria**](modeling-needs-acceptance-criteria.md):
 
-- What?
+The installation interface shall ...
 
 ---
 

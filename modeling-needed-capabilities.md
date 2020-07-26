@@ -21,15 +21,8 @@ What does it take for a Requirements Engineer to be successful?
 
 The customer needs
 
-- Transportation, supply
-- Suppliers of grocery
-- Forecast of visitors
-- Inventory / Stock that is already present
-- Hygene in store / cleaning
-- Vendor management
-- analysis of product sales vs future demand
-- Live tracking
-- Connectivity to all stakeholders
+- what?
+- what?
 
 for ensuring well-stocked store with fresh supplies
 
@@ -37,16 +30,12 @@ for ensuring well-stocked store with fresh supplies
 
 The customer needs
 
-- Live display of count
-- ability to staff billing stations
+- what?
+- what?
 
 for ensuring quick service
 
-Count needs to differentiate between visitors and staff
-
-Accuracy: 100 visitors will be reported between 95 and 105, in a period of 3 hours
-
-Valid = visitors ; Invalid = staff
+It needs to be `what?`
 
 It needs to be `what?`
 
@@ -59,16 +48,12 @@ It needs to be `what?`
 
 Operations need
 
-- easy configuration
+- what?
+- what?
 
-for quick (< 1 hour) commissioning (=connect and train / signoff)
+for quick installation and commissioning
 
-It needs to be simple
-
-- anybody can do it
-- minimize site dependency
-- user manual for reference: for installation and for use
-- adaptible installation (power adapter, wifi / 4G...)
+It needs to be `what?`
 
 It needs to be `what?`
 
@@ -79,11 +64,11 @@ It needs to be `what?`
 ![developers](images/developers.png)
 `Exercise: Make a representation of installation for developers`
 
-The implementation needs to have a workflow according to 'this' mockup
+The implementation needs to ...
 
 ---
 
-The implementation needs to be like Chromecast / home automation
+The implementation needs to ...
 
 ---
 

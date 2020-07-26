@@ -13,7 +13,7 @@ Keeping these machines safe and reliable is vital in any manufacturing unit.
 
 The **CNC-machine monitor** gives the following data:
 
-- Operating temperature: Temperature around the CNC machine in Celcius.
+- Operating temperature: Temperature around the CNC machine in Celsius.
 Reported every half-hour. Need to alert if it goes beyond 35 degrees.
 
 - Self-test status-code, reported at startup
@@ -21,12 +21,12 @@ Reported every half-hour. Need to alert if it goes beyond 35 degrees.
 | Code | Meaning |
 |---:|---|
 |0xFF|All ok|
-|0x00|No data (e.g., no power, no connection to the data-collector)|
+|0x00|No data (examples: no power, no connection to the data-collector)|
 |0x01|Controller board in the machine is not ok|
 |0x02|Configuration data in the machine is corrupted|
 
-- Part-dimension variation: In mm. A variation of more than 0.05mm needs attention
-(e.g., a drill-bit in the machine may need replacement)
+- Part-dimension variation: In mm. A variation of more than 0.05 mm needs attention
+(example: a drill-bit in the machine may need replacement)
 
 - Duration of continuous operation: Reported in minutes.
 Updated once every 15 minutes.
