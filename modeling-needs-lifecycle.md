@@ -28,13 +28,13 @@ How about regulatory requirements?
 
 Regulation | Context | Specification
 ---|---|---
-Data Privacy in car entertainment systems | Privacy: Service, Used-car sale, Branding/reputation, Usability | No uploads, add warning in manual
-Display of Medical images during treatment | Treatment in Op.theater, GDPR, patient's assets/contracts | Primary ident, Secondary
-Salary data in HR workplace | Privacy in office / ... confidentiality | Screensaver, polarizing sheet, timeout screen-lock
-Face-recognition to count visits | Like CCTV | Like CCTV
+Data Privacy in car entertainment systems | ? | ?
+Display of Medical images during treatment | ? | ?
+Salary data in HR workplace | ? | ?
+Face-recognition to count visits | ? | ?
 
 ## Recognizing the solution-scope
 
 Any Product Quality will be influenced by the environment.
 
-> Watch the system-boundary. 
+> Watch the system-boundary.

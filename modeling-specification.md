@@ -17,11 +17,13 @@ Specification: an act of identifying something precisely
 
 > Make it Verifiable. Then pursue completion.
 
-`Exercise: Critique this- "The device shall sync to the backend when online. It shall store footfalls temporarily when offline"`
+`Exercise: Critique this- "The device shall sync to the backend when online.
+It shall store footfalls temporarily when offline"`
 
 - What is lacking?
 
-`Exercise: Critique this- "The system shall notify the store-owner when the store gets full"`
+`Exercise: Critique this-
+"The system shall notify the store-owner when the store gets full"`
 
 - What is lacking?
 

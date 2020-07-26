@@ -28,18 +28,19 @@ Ref. book [Writing effective use-cases](https://www.academia.edu/22312187/Writin
 **Steps**:
 
 1. Field engineer looks up location of installation
-2. Field engineer looks up the order and picks the right kit
-3. Field engineer ensures prerequisites: stable power, internet connection
-4. Field engineer travels to the site
-5. Field engineer takes measurements
-6. Field engineer agrees the position and accessibility with store owner
-7. Field engineer records owner-permission to commission, with passwords for internet connection
-8. Field engineer installs the hardware and does a power-on
-9. Field engineer installs the software
-10. Field engineer performs startup checks
-11. Backend offers a test-mode to the Field engineer
-11. Field engineer signs off test results with store owner
-13. Field engineer switches backend to production mode
+1. Field engineer looks up the order and picks the right kit
+1. Field engineer ensures prerequisites: stable power, internet connection
+1. Field engineer travels to the site
+1. Field engineer takes measurements
+1. Field engineer agrees the position and accessibility with store owner
+1. Field engineer records owner-permission to commission,
+with passwords for internet connection
+1. Field engineer installs the hardware and does a power-on
+1. Field engineer installs the software
+1. Field engineer performs startup checks
+1. Backend offers a test-mode to the Field engineer
+1. Field engineer signs off test results with store owner
+1. Field engineer switches backend to production mode
 
 **Extensions**:
 
@@ -74,12 +75,7 @@ so that the customer has a full functioning solution.
 
 [**Acceptance Criteria**](modeling-needs-acceptance-criteria.md):
 
-- We need an app on the playstore that the Field Engineers can install on their own mobile
-- Anyone should not have access to configure the system/device: Only Field engineers with valid credentials can configure
-- Proper error response with correction suggestions ( if *misconfigured *etc ) in *GUI/log-file/popup...
-- DEFOA: The instlalation kit shall *notify the Field Engineer when it is powered-on and there is a defect.
-- The system shall provide a *notification to Field Engineer , customer and the seller company/person when installation process is done including connection to backend
-
+- What?
 
 ---
 
