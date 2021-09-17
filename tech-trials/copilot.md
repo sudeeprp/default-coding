@@ -1,10 +1,12 @@
-# GitHub Copilot - does it save my time?
+# GitHub Copilot - does it save time
 
-Wrong auto-completion. _Auto-complete is usually right… is my node outdated? 4 mins waste_
+Wrong auto-completion.
+_Auto-complete is usually right… is my node outdated? 4 minutes waste_
 
 ![wrong autocomplete of array min](wrong-min-autocomplete.png)
 
-Auto-completes correctly after typing `Math.min`. _Auto-complete spread-operator, which I usually forget. Saved ~6 mins_
+Auto-completes correctly after typing `Math.min`.
+_Auto-complete spread-operator, which I usually forget. Saved ~6 minutes_
 
 ![correct autocomplete of array min](correct-min-autocomplete.png)
 
@@ -24,16 +26,17 @@ Completes return value... _almost human_
 ![completes return value](completes-return-value.png)
 
 ---
-_Diversion…_ Where did patientId come from?
+_Diversion…_ Where did `patientId` come from?
 
 ![what patientid](what-patientid.png)
 
 ---
-Picks unused variable and does JSON.stringify for you. _Saves logging rework time ~2 mins_
+Picks unused variable and does `JSON.stringify` for you.
+_Saves logging rework time ~2 minutes_
 
 ![json stringify](json-stringify.png)
 
 ---
-Unauthorized is `401`! Saves a confirmation lookup ~2 mins
+Unauthorized is `401`! Saves a confirmation lookup ~2 minutes
 
 ![unauthorized is 401](unauthorized-is-401.png)
